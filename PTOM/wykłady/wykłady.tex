@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{polski}
+\usepackage{hyperref}
 \usepackage[margin=2.5cm]{geometry}
 
 \setlength{\parindent}{0pt}
@@ -15,6 +16,8 @@
 \textbf{Prowadzący}: dr inż Piotr Brzeski
 
 \textbf{Konsultacje}: p. 60, 422 (IRiTM), poniedziałki, wtorki (rzadko), środy, czwartki (rzadko)
+
+\textbf{Materiały online}: \href{https://studia.elka.pw.edu.pl/pl/23Z/-/login/}{https:\slash \slash studia.elka.pw.edu.pl\slash pl\slash 23Z\slash-\slash login\slash}
 
 \textbf{e-mail}: piotr.brzeski@pw.edu.pl
 
@@ -85,6 +88,103 @@ Rzutowanie obiekt 3D (+ ewentualnie czas) na obraz 2D
     \item charakterystyka pracy lekarza-specjalisty
 \end{itemize}
 
-Rozdzielczość obrazowania - najmniejsza odległość w obiekcie obrazowanym między dwoma punktami o maksymalnym kontraście które można rozróżnić (FWHM – Full Width at Half Maximum, FWTM – Full Width at Tenth Maximum)
+Rozdzielczość obrazowania - najmniejsza odległość w obiekcie obrazowanym między dwoma punktami o maksymalnym kontraście które można rozróżnić jako dwa obiekty na obrazie (FWHM – Full Width at Half Maximum, FWTM – Full Width at Tenth Maximum)
+
+Rozdzielczość wartstwy może być większa (np. ok 1 mm)
+
+Jakość obrazu - funkcja przenoszenia modulacji - iloraz między kontrastem fizycznym do kontrastu obrazowego $\mathrm{MTF} = \frac{K_f}{K_o}$ gdzie $K_f$ jest kontrastem fizycznego obiektu, natomiast $K_o$ to kontrast danego obiektu na obrazie.
+
+Więcej o MTF i CTF (fukncji przenoszenia kontrastu) na stronie pod \href{https://brain.fuw.edu.pl/edu/index.php/Obrazowanie:Obrazowanie_Medyczne/Podstawowe_Parametry_Obraz%C3%B3w#label-fig:modulation_depth}{linkiem}
+
+Wzorce w postaci sinusoidy.
+
+$MTF = 1$ - gdy częstotliwość danego wzorca wynosi zero, obraz jest idealnie odwzorowany. Wraz z częstotliwością maleje funkcja przenoszenia modulacji.
+
+Funkcja przenoszenia modulacji całkowitej jest iloczynem funkcji przenoszenia modulacji składowych systemu obrazowania.
+
+$MTF_c = \displaystyle\prod_{i=1}^{N}\mathrm{MTF}_i$, gdzie $N$ - jest liczba systemów.
+
+Na kolokwium
+
+Stosunek sygnał/szum (NSR)
+
+Artefakty
+
+Zniekształcenia:
+\begin{itemize}
+    \item geometryczne
+    \item zmiany pola magnetycznego
+    \item przekrzywienie powierzchni odbiornika
+    \item spowodowane fizjologią tkanek, narządów
+\end{itemize}
+
+\subsection{Warunki obserwacji}
+
+Negatoskop - silna lampa do podświetlania negatywów z RTG
+
+Wiarygodność diagnostyczna obrazów
+
+Jeśli przesuniemy próg decyzyjny, może sprawić, że diagnoza będzie błędna.
+
+Procedura decyzyjna
+
+Macierz decyzyjna (prawdziwie pozytywna, fałszywie pozytywna, fałszywie negatywna, prawdziwie negatywna)
+
+Wiarygodność metody diagnostyczna
+
+Na kolokwium
+
+$czulosc = TP/(TP+FN)$
+
+$specyficznosc = TN/(TN+FP)$
+
+Krzywa ROC - służy do oceny metody badawczej
+
+Krzywa A - czysto przypadkowa
+
+\section{Wykład (11.10.2023r.)}
+
+\subsection{Techniki Medycyny Nuklearnej}
+
+Funkcje:
+\begin{itemize}
+    \item terapia
+    \item diagnostyka
+\end{itemize}
+
+Jak wprowadzić izotop promieniotwórczy do ciała:
+
+- doustnie
+- dożylnie
+- przez układ oddechowy
+
+Radiofarmaceutyk:
+Podział w zależności od sposobu uzyskiwania:
+- radionuklidy reaktorowe - powstające w wyniku reakcji jądrowej danego izotopu i neutronów
+- radionuklidy cyklotronowe 
+- radionuklidy generatorowe
+
+Technet-99m (Tc-99m) generatorowy
+
+Gammakamera
+
+Jakie własności musi mieć dobry izotop promieniotwórczy
+\begin{itemize}
+    \item fizyczne \begin{itemize}
+        \item $T_{1/2}$ - czas połowicznego rozpadu - musi być na tyle krótki, aby nie przekroczyć maksymalnej dawki dla pacjenta, oraz na tyle długi, aby móc go przetransporotwać. Dla przykładu czas połowicznego rozpadu dla technetu-99m wynosi 6h.
+        \item $A [Bq]$ - jednostką w układzie SI jest Bekerel [$1 Bq = 1\mathrm{rozpad} / 1s$], dawniej jednostką aktywności były kiury [$1 Ci = 3,7 \cdot 10^{10} Bq$]. Aktywność promieniotwórcza, na tyle duża, aby promieniowanie mogło opóścić organizm pacjenta, ale też nie za duża, żeby nie przekroczyć dopuszczalnej dawki
+        \item Rozpad gamma monoenergetyczny - najbardziej przenikliwy rodzaj promieniowania, dzięki temu możliwe jest obrazowanie na podstawie promieniowania wydostającego się z ciała pacjenta
+        \item Energia - wykorzystywane są izotopy o energiach $30 - 360~keV$, najczęściej stosowany izotop - technet posiada dla przykładu energię $141~keV$
+    \end{itemize}
+    \item Chemiczne \begin{itemize}
+        \item Czystość - ile izotopu promieniotwórczego zawiera dana próbka. Czysta izotop musi zawierać największą ilość tegoż izotopu, bez znaczącej ilości innych pierwiastków, czyli zanieczyszczeń. 
+    \end{itemize}
+    \item Biologiczne \begin{itemize}
+        \item Powinowactwo do badanego organu\slash narządu - zdolność substancji do wiązania się z komórkami określonego narządu\slash tkanki\slash organu. Dzięki temu, że radiofarmaceutyki wiążą się z konkretnymi organami, gromadzą się one w nich i dzięki ich dużej koncentracji w określonym organie pozwala na analizę jego struktury i fizjologi. Różne radiofarmaceutyki mogą wiązać się z różnymi organami. Np. jod gromadzi się w tarczycy.
+        \item Czas rozpadu biologicznego $T_B$ - jest to czas wydalania radioizotopu z organizmu. Pożądany czas rozpadu biologicznego musi być wystarczająco długi, aby móc wykonać badanie diagnostyczne, oraz na tyle krótki, aby pacjent szybko pozbył się farmaceutyku z organizmu po badaniu.
+    \end{itemize}
+\end{itemize}
+
+Czas połowicznego rozpadu i czas rozpadu biologicznego razem składają się na tzw. efektywny czas połowicznego zaniku.   
 
 \end{document}
