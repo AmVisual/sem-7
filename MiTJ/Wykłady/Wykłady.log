@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.4)  10 OCT 2023 18:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.4)  14 OCT 2023 20:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -235,34 +235,29 @@ LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <7> on input line 25.
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <5> on input line 25.
+ [1
 
-Overfull \hbox (29.7784pt too wide) in paragraph at lines 43--44
-[]\OT4/cmr/m/n/10 Aby uwol-ni¢ kwar-ki na-le-ªy je pod-grza¢ ($10[]\OML/plm/m/it/10 K$\OT4/cmr/m/n/10 !!!) lub ±ci-sn°¢ ($\OML/plm/m/it/10 ^^Z \OT4/cmr/m/n/10 = 100000000\OML/plm/m/it/10 t=cm[]$\OT4/cmr/m/n/10 ) 
- []
-
-[1
-
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plmi.enc}] (./Wyk≈Çady.aux)
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plmi.enc}] [2{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [3{c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plms.enc}] [4{c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plsc.enc}] [5] [6] (./Wyk≈Çady.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `Wyk≈Çady.out' has not changed.
-(rerunfilecheck)             Checksum: 54917B2CC51D386ACBA7495C84C37042;722.
+(rerunfilecheck)             Checksum: 993B3BAF019076033EDE4DC6BB8C2751;2592.
  ) 
 Here is how much of TeX's memory you used:
- 7794 strings out of 474928
- 120998 string characters out of 5763562
- 1926785 words of memory out of 5000000
- 29265 multiletter control sequences out of 15000+600000
- 567206 words of font info for 59 fonts, out of 8000000 for 9000
+ 7842 strings out of 474928
+ 121659 string characters out of 5763562
+ 1927785 words of memory out of 5000000
+ 29282 multiletter control sequences out of 15000+600000
+ 568047 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,625b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr7.pfb>
-Output written on Wyk≈Çady.pdf (1 page, 51371 bytes).
+ 75i,6n,79p,849b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on Wyk≈Çady.pdf (6 pages, 108803 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 172 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
