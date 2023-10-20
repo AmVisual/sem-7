@@ -1,10 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1697309557 "c:/Users/Komputronik/Documents/Studia/Politechnika Warszawska/Rok 4/sem 7/MiTJ/Wykłady/Wykłady.tex" "Wykłady.pdf" "Wykłady" 1697309557 0
-  "Wykłady.aux" 1697309557 2287 b951657e0dedee9a8272b6e7de426b32 "pdflatex"
-  "Wykłady.out" 1697309557 2592 993b3baf019076033ede4dc6bb8c2751 "pdflatex"
-  "Wykłady.tex" 1697309556 11560 4cecb9554874f00381f571dfff92e22c ""
-  "c:/Users/Komputronik/Documents/Studia/Politechnika Warszawska/Rok 4/sem 7/MiTJ/Wykłady/Wykłady.tex" 1697309556 11560 4cecb9554874f00381f571dfff92e22c ""
+["pdflatex"] 1697802595 "c:/Users/Komputronik/Documents/Studia/Politechnika Warszawska/Rok 4/sem 7/MiTJ/Wykłady/Wykłady.tex" "Wykłady.pdf" "Wykłady" 1697802596 0
+  "Wykłady.aux" 1697802596 3554 9ed362a90f9bfba02f9c14a9ac437cb6 "pdflatex"
+  "Wykłady.out" 1697802596 4694 71d7ee2d411b2d8fe4cfbb6cec569e00 "pdflatex"
+  "Wykłady.tex" 1697802593 18704 0d073ce0400496b7127c2e1ddf09eac3 ""
+  "c:/Users/Komputronik/Documents/Studia/Politechnika Warszawska/Rok 4/sem 7/MiTJ/Wykłady/Wykłady.tex" 1697802593 18704 0d073ce0400496b7127c2e1ddf09eac3 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1696423725 2900 1537cc8184ad1792082cd229ecc269f4 ""
+  "c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plme.enc" 1696428165 3126 59f33ff3e396436ebc36f4e7b444d5c4 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plmi.enc" 1696428165 2005 f094775651a1386335c158fb632529f1 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plms.enc" 1696428165 2468 3f9e2f3088bcf5b581dfc367d71e7d95 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plrm.enc" 1696428165 1944 1845592c00bbe510359fd6887a83ff72 ""
@@ -35,7 +36,9 @@
   "c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1696423725 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plbx10.pfb" 1696428165 27050 0da5f310861fb948b3c5e6a53aad685b ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plbx12.pfb" 1696428165 26733 3fa55bab1df289b642fa8cd9e61fb25f ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plex10.pfb" 1696428165 22371 094f80a5a689f2eefc72bff87ecbc407 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plmi10.pfb" 1696428165 29517 5d690de1a29e60238ec3268dd7531d89 ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plmi5.pfb" 1696428165 30474 76837cc40aac64eb8f56a9cd5f90dbf2 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plmi7.pfb" 1696428165 30062 17713acbf0ce861a9b8ad96d223de7fc ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr10.pfb" 1696428165 27396 59c827d3c8566d0d9cbf81ac7c0d162a ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr12.pfb" 1696428165 27754 6f5ae55af1b64df2aab0bbeada447136 ""

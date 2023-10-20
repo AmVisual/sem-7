@@ -204,7 +204,7 @@ Co to są liczby kwantowe -  liczby opisujące dyskretne wielkości fizyczne[1],
 Cztery główne liczby opisujace stan kwantowy:
 \begin{itemize}
     \item głowna - odpowiada za energię
-    \item poboczna - odpowidada za moment orbitalny
+    \item poboczna - odpowiada za moment orbitalny
     \item magnetyczna - odpowiada za wartość rzutu momentu orbitalnego na wyróżnioną oś
     \item spinowa - odpowiada za wartość spinu
 \end{itemize}
@@ -218,5 +218,150 @@ Dodatkowo, aby proton mógł doprowadzić do rozszczepienia jądra atomowego, mu
 \subsection{Model powłokowy}
 Opisuje zachowanie "jąder magicznych" (2,8,20,28,50,82,126,...).
 Model opisuje, iż nukleony znajdują się na powłokach.
+
+\section{Wykład (20.10.2023) - źródła promieniotwórcze}
+
+Aktualnie 118 peirwiastków zarejestrowanych.
+
+\subsection{Przemiany promieniotwórcze}
+
+Przekształenie jądra w inne z równoczesną emisją cząstki, $\alpha$, $\beta$ lub $\gamma$. Przemiany promieniotwórcze należą do klasy procesów stochastycznych.  (Przemiany chemiczne nie mają wpływu na zmiany jądra atomowego).
+
+Przemiana alfa:
+\begin{itemize}
+    \item emitowane z atomów ciężkich (liczba masowa rzędu 200)
+    \item jądro atomu helu
+    \item wzór na przemianę alfa
+    \item im większa jest energia emitowanej cząstki tym mniejsza jest szerokość bariery potencjału i tym bardziej jest prawdopodobny rozpad
+    \item energia uwalniana w rozpadzie określona jest przez różnicę mas jądra macierzystego i produktów rozpadu $Q_a = (M(X)-[M(Y)+M(a)])\cdot c^2$, $Q_a = ([E_w(Y)+E_w(a)] - E_w(Y))\cdot c^2$
+    \item w rezultacie przemiany alfa z jądra wyemitowana jest cząstka alfa
+    \item energia rozpadu $Q_a = E_k(\alpha)\left[ 1 + \frac{m_{\alpha}}{m_{Y}}\ \right]$
+    \item energia emitowanych cząstek alfa dla danej przemiany jest dobrze określona, co jest konsekwencją faktu, że rozpad jest dwuciałowy
+\end{itemize}
+
+Rozpad beta:
+\begin{itemize}
+    \item beta "+" i beta "-"
+    \item w trakcie przemiany beta "-" następuje zmiana neutornu w proton i emisja elektronu oraz antyneutrina elektronowego
+    \item Rozpad beta jest rozpadem trzyciałowym
+    \item w trakcie rozpadu emitowane jest 
+    \item przemiana beta-minus może zachodzić, jeśli masa atomu pocz jest mniejsza od masy atomu końcowego
+    \item w trakcie rozpadu beta-plus następuje zamiana protonu w neutron i emitowany jest pozyton i neutrino elektornowe
+    \item energie pocz pozytonów są większe niż
+    \item wychwyt elektronów - proces zbliżon do procesu beta-plus
+    \item z orbity atomowej przez jądro atomowe 
+    \item warunek wychwytu $M_A(Z,A) > M_A (Z-1, A)$
+    \item następuje wówczas również emisja fotonu rentgenowskiego oraz emisja elektronu z bardziej zewnętrznej powłoki atomu, zwanym elektornem Augene'a.
+\end{itemize}
+
+Ścieżka stabilności - stanowią ją wszystkie stabilne jądra atomowe.
+Dla jąder lekkich prosta jest zbliżona do prostej $N=Z$. Im większa liczba atomowa, tym bardziej śceiżka odbiega od tej prostej. Aby jądro było stabilne, siły jądrowe możą równoważyć siły oddziaływania kulomboweskiego. Dla cięższych jąder odpowiednia liczba neutronów zapewnia stabilność.
+
+Przemiana gamma:
+\begin{itemize}
+    \item towarzyszy rozpadom alfa lub beta. Cząstka gamma emitowana jest w trakcie przemiany wzbudzonego jądra atomowego do stanu podstawowego.
+    \item konwersja wewnętrzna - proces, w którym miejsce emisji fotonu następuje wyemitowanie elektronu z jednej z powłok atomowych. $X_Z^A + e_{at}^- \rightarrow X_Z^A + e^-$. Współczynnik wewnętrznej konwersji $\alpha = \frac{p_e}{p_{\gamma}} = \frac{N_e}{N_{\gamma}}$
+    \item stan wzbudzony nazywamy stanem izomerycznym, przejście izomeryczne (zachodzi z pewnym opóźnieniem)
+    \item widmo elektronów emitowanych w wyniku rozpadu jąder atomowych patrz wykład.
+\end{itemize}
+
+Rozpad jądrowy z emisją protonu - mało prwadoposobne
+
+Rozpad jądrowy z emisją neutronu
+
+Rozszczepienie spontaniczne (przykładowo rozpad kalifornu-252)
+
+\subsection{Schematy promieniotwórcze}
+
+Nuklid początkowy, typ ropadu, nuklid końcowy
+
+\subsection{Prawo rozapdu promieniotwórczego}
+
+24.11 - spotkanie obecność obowiązkowa
+
+Rozpad promieniotwórzy nie jest wynikeim wpływu czynników zewnętrznych na jądro atomowe i nie zależy od wcześniejszych jego losów. Rozpad ma charakter stochastyczny.
+
+\begin{equation}
+    N(t) = N_0 \cdot \exp{-\lambda t}
+\end{equation}
+gdzie $\lambda$ jest współczynnikiem zwanym stałą rozpadu, $N_0$ jest początkową liczbą jąder.
+
+Przy rozpadzie przez bardzo krótki przedział czasu, rozumiemy taki czas, dla którego liczba jąder po rozpadzie jest zbliżona do liczby jąder przed rozpadem. Np. 5 rozpadów na 10 jąder nie będzie krótkim czasem, ale już 5 rozpadów na 1000000 jąder będzie krótkim czasem. 
+
+Liczba jąder, które uległy rozpadowi:
+\begin{equation}
+    N_0 - N(t) = N_0\cdot (1-e^{-\lambda t})
+\end{equation}
+
+Średni czas życia: $\tau = 1/\lambda$
+
+Czas połowicznego zaniku\slash rozpadu - taki czas w którym połowa jąder nie ulega rozpadowi
+
+\begin{equation}
+    T = \frac{\log{2}}{\lambda} = \log{2} \cdot \tau
+\end{equation}
+
+Aktywność źródła - liczba rozpadów zachodzących w jednostce czasu.
+
+\begin{equation}
+    A = \lambda \cdot N_0 \cdot e^{-\lambda t} = A_0 \cdot e^{-\lambda t} = A_0 \cdot e^{-\log{2} \cdot t / T}
+\end{equation}
+
+\subsection{Sukcesywne rozpady promieniotwórcze}
+
+Występuje, gdy po rozpadzie jednych jąder promieniotwórczych powstają inne jądra promieniotwórczegorcze. Jaka jest aktywność takiego układu, gdzie jedne jądra powstają, a inne ulegają rozpadowi?
+
+Szereg promieniotwórczy
+
+Przykład dla przypadku jąder promieniotwórczych typu 1 i 2, gdzie 2 powstaje z rozpadu 1, a z rozpadu 2 powstaje jądro stabilne.
+
+\subsection{Naturalne źródła promieniotwórcze}
+
+Szeregi promieniotwórcze
+
+Pierwiaski naturalne muszą mieć czas połowicznego rozadu porównywalne z czasem istnienia Ziemi (rzędu miliardów lat).
+
+Istnieją cztery szeregi promieniotwórcze:
+torowy, naptunowy, uranowo-radowy, uranowo-aktynowy.
+
+\subsection{Sztuczna promieniotwórczość}
+
+Źródła neutronów, to na ogół układy izotopowe, w których wykorzystuje się źródło cząstek naładowanych. Cząstki te wywołują następnie reakcje jądrowe w których emitowany jest neutron.
+
+Często stosowane jest źródło radowo-berylowe.
+
+Reakcje typu $(d,n)$ - tzw. generatory neutronów
+
+$_1^3T + _1^2D \rightarrow _0^1n + _2^4He, Q=+17,586~MeV$
+
+Reakcja będąca podstawą energetyki termojadrowej
+
+Źródła rozszczepieniowe
+
+Produkcja neutronów w reaktorach termojądrowych
+
+\subsection{Wiązki promieniowania jonizującego}
+
+Wiązka promieniowania jonizującego- strumień cząstek naładowanych, jonizujących emitowanych w określnym kierunku.
+
+Źródła promieniotwórcze tworzą cząstki o określonych energiach. W zastosowaniach medycznych, przemysłowych potrzebne są cząstkich o wyższcych energiach.
+
+Urządzenia służące do przyspieszania cząstek naładowanych nazywamy akceleratorami.
+
+Częstość cyklotronowa: $\omega = \frac{2\pi}{T} = \frac{qB}{m}$ (Alvares) - częstotliwość, w jakiej naładowana cząstka o ładunku $q$ i masie $m$ zatacza okrąg w polu magnetycznym o indukcji $B$. Ważne - częstość ta nie zależy od prędkości cząstki.
+
+\subsection{Spektrometry magnetyczne i akceleratory}
+
+Spektrometr masowy (prof. Danysz).
+
+Spektrometr magnetyczny
+
+Akceleratory: liniowe i kołowe
+
+Generator Greinachera lub Cockrofta-Waltona
+
+Generator Van de Graffa (domianą detektora typu Van de Graffa jest tzw. Pelletron)
+
+Akceleratory typu tandem
 
 \end{document}

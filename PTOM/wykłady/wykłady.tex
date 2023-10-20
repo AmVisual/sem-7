@@ -128,19 +128,25 @@ Jeśli przesuniemy próg decyzyjny, może sprawić, że diagnoza będzie błędn
 
 Procedura decyzyjna
 
-Macierz decyzyjna (prawdziwie pozytywna, fałszywie pozytywna, fałszywie negatywna, prawdziwie negatywna)
+Macierz decyzyjna (prawdziwie pozytywna TP, fałszywie pozytywna FP, fałszywie negatywna FN, prawdziwie negatywna TN)
 
-Wiarygodność metody diagnostyczna
+Wiarygodność metody diagnostycznej
 
 Na kolokwium
 
-$czulosc = TP/(TP+FN)$
+$\mathrm{czulosc} = TP/(TP+FN)$
 
-$specyficznosc = TN/(TN+FP)$
+$\mathrm{specyficznosc} = TN/(TN+FP)$
+
+$\mathrm{dokladnosc} = (TP + TN)/(TP + TN + FP + FN)$
+
+$\mathrm{pozytywna~wartosc~predykcyjna} = TP/(TP + FP)$
+
+$\mathrm{negatywna~wartosc~predykcyjna} = (TN)/(TN + FN)$
 
 Krzywa ROC - służy do oceny metody badawczej
 
-Krzywa A - czysto przypadkowa
+Krzywa A - czysto przypadkowa (pratrz wykład 1-2)
 
 \section{Wykład (11.10.2023r.)}
 
@@ -164,20 +170,20 @@ Podział w zależności od sposobu uzyskiwania:
 - radionuklidy cyklotronowe 
 - radionuklidy generatorowe
 
-Technet-99m (Tc-99m) generatorowy
+Technet-99m (Tc-99m) generatorowy - najczęściej stosowany izotop promieniotwórczy stosowany w radiodiagnostyce.
 
-Gammakamera
+Gammakamera - w scyntygrafii to urządzenie diagnostyczne do badań narządów, w których nagromadzony jest radioizotop. Wyposażony jest on w detektor o dużym polu widzenia. W detektorze znajduje się kryształ scyntylacyjny, który pod wpływem promieniowania jonizującego (najczęściej gamma) emituje błyski świetlne (scyntylacje). Źródło Wikipedia
 
 Jakie własności musi mieć dobry izotop promieniotwórczy
 \begin{itemize}
     \item fizyczne \begin{itemize}
         \item $T_{1/2}$ - czas połowicznego rozpadu - musi być na tyle krótki, aby nie przekroczyć maksymalnej dawki dla pacjenta, oraz na tyle długi, aby móc go przetransporotwać. Dla przykładu czas połowicznego rozpadu dla technetu-99m wynosi 6h.
-        \item $A [Bq]$ - jednostką w układzie SI jest Bekerel [$1 Bq = 1\mathrm{rozpad} / 1s$], dawniej jednostką aktywności były kiury [$1 Ci = 3,7 \cdot 10^{10} Bq$]. Aktywność promieniotwórcza, na tyle duża, aby promieniowanie mogło opóścić organizm pacjenta, ale też nie za duża, żeby nie przekroczyć dopuszczalnej dawki
-        \item Rozpad gamma monoenergetyczny - najbardziej przenikliwy rodzaj promieniowania, dzięki temu możliwe jest obrazowanie na podstawie promieniowania wydostającego się z ciała pacjenta
+        \item $A~[Bq]$ - jednostką w układzie SI jest Bekerel [$1 Bq = 1\mathrm{rozpad} / 1s$], dawniej jednostką aktywności były kiury [$1 Ci = 3,7 \cdot 10^{10} Bq$]. Aktywność promieniotwórcza musi być na tyle duża, aby promieniowanie mogło opóścić organizm pacjenta, ale też nie za duża, żeby nie przekroczyć dopuszczalnej dawki
+        \item Rozpad gamma monoenergetyczny - najbardziej przenikliwy rodzaj promieniowania, dzięki temu możliwe jest obrazowanie na podstawie promieniowania wydostającego się z ciała pacjenta.
         \item Energia - wykorzystywane są izotopy o energiach $30 - 360~keV$, najczęściej stosowany izotop - technet posiada dla przykładu energię $141~keV$
     \end{itemize}
     \item Chemiczne \begin{itemize}
-        \item Czystość - ile izotopu promieniotwórczego zawiera dana próbka. Czysta izotop musi zawierać największą ilość tegoż izotopu, bez znaczącej ilości innych pierwiastków, czyli zanieczyszczeń. 
+        \item Czystość - ile izotopu promieniotwórczego zawiera dana próbka. Czysty izotop to taki, który zawiera dużą ilość tego izotopu, bez znaczącej ilości innych pierwiastków (zanieczyszczeń). 
     \end{itemize}
     \item Biologiczne \begin{itemize}
         \item Powinowactwo do badanego organu\slash narządu - zdolność substancji do wiązania się z komórkami określonego narządu\slash tkanki\slash organu. Dzięki temu, że radiofarmaceutyki wiążą się z konkretnymi organami, gromadzą się one w nich i dzięki ich dużej koncentracji w określonym organie pozwala na analizę jego struktury i fizjologi. Różne radiofarmaceutyki mogą wiązać się z różnymi organami. Np. jod gromadzi się w tarczycy.
@@ -185,6 +191,102 @@ Jakie własności musi mieć dobry izotop promieniotwórczy
     \end{itemize}
 \end{itemize}
 
-Czas połowicznego rozpadu i czas rozpadu biologicznego razem składają się na tzw. efektywny czas połowicznego zaniku.   
+Czas połowicznego rozpadu i czas rozpadu biologicznego razem składają się na tzw. efektywny czas połowicznego zaniku.
+
+\section{Wykład (18.10.2023)}
+
+Rozkład izotropowy
+
+Gammakamera, Scyntykamera, Kamera Angera
+
+Detektor składa się z:
+\begin{itemize}
+    \item Kolimatora (z ołowiu z dodatkiem antymonu do utwardzenia, w kolimatorze znajdują się otwory które są prostopadłe do jego powierzchni) - przepuszczenie fotonów, które są prostopadłe do powierzchni kolimatora
+    \item Scyntylator (kryształ scyntylacyjny NaI aktywowany Tl (aktywacja talem zwiększa oddziaływanie kryształu z promieniowaniem gamma))
+    \item Fotopowielacze
+    \item Procesor pozycyjny
+\end{itemize}
+
+Scyntygraf - nie jest już używana
+
+Rozmiary kryształu: powierzchnia 500mmx400mm
+
+Kwant gamma oddziaływuje z materią na 3 sposoby (na egzaminie dyplomowym):
+\begin{itemize}
+    \item fotoefekt
+    \item efekt komptona
+    \item tworzenie par (elektron pozyton) energia kwantu powyżej ok. 1 MeV
+\end{itemize}
+
+Obraz scyntygraficzny jest obrazem całkowym (całkowanie po warstwach ciała pacjenta).
+
+Własności kryształu scyntylayjnego:
+- higroskopijny
+
+Gammakamery: jedno, dwu i trójgłowicowe
+
+Fotopowielacze powinny pokryć całą powierzchnię kryształu
+
+Scyntylator po oddziaływaniu z kwantami gamma wysyła fotoelektrony.
+
+Napięcie w fotopowielaczu: 1 kV.
+
+Elektron powstający na fotokatodzie jest nakierowywany przez pole elektryczne na peirwszą dynodę. Osiąga on energię wystarczającą, aby wybić większą ilość el. na kolejnej dynodzie. W fotopowielaczu znajduje się rząd dynod.
+Fotopowielacz wytwarza ok 10 000 000 elektronów.
+
+Fotopowielacze najlepiej aby miały kształt heksagonalny.
+
+Jak z rozkładu kwantów odzyskać położenie (x,y) kwantu gamma.
+
+- Układ sumowania liniowego
+- Formowanie i kodowanie sygnałów pozycyjnych w gammakamerach (model Tanaki) (sygnały: STROB - sygnał, który określa, czy dane współrzędne (x,y) są ważne, X, Y - koordynaty błysku świetlnego)
+- Do każdego fotopowielacza dać po jednym wzmiacniaczu, i każdy podłączyć do przetwornika a-c
+
+Skąd beirze się STROB - łączymy wszystkie anody fotopowielaczy i wspólnie podajemy na jednokanałowy analizator amplitudy (urządzenie elektroniczne, które na wejściu otrzymuje sygnał, który jest sumą sygnałów z wszystkich fotopowielaczy, i jego amplituda jest proporcjonalna do energii kwantu promieniowania gamma, i na wyjściu sygnał jest podawany tylko wtedy, gdy amplituda sygnału na wejściu znajduje się w dopuszczalnym przedziale wartości amplitudy (jeśli amplituda jest za niska, lub za wysoka, na wyjściu brak sygnału))
+
+Do czego służy jednokanałowy analizator amplitudy:
+Do usunięcia: Impulsy komptonowskie, podówjne impulsy lub impulsy, które nie pochodzą z organizmu człowieka.
+
+Jak określane jest położenie impulsu świetlnego ze scyntylatora?
+
+Linia opóźniająca, która powoduje rozdwojenie impulsu na dwa. Różnica dotarcia sygnału po obu końcach linii op. pozwala na określenie położenia impulsu. Time to Amplitude converter (amplituda jest proporcjonalna do różnicy czasu między startem i stopem)
+
+Przetwornik analogowo-cyfrowy - wyjście X, Y są sygnałami analogowymi. Przetwornik zamienia go na sygnał cyfrowy.
+
+Kolimator zapobiega tylko zatrzymywaniu kwantów poruszających się pod kątem. Kwanty gamma, które powstają w wyniku efektu komptona zachodzącego w ciele ludzkim ma energię mniejszą niż kwant gamma pochodzący bezpośrednio ze źródła
+
+Rodzaje kolimatorów z równoległymi otworami:
+- wysokoenergetyczne (pow. 141 keV)
+- niskoenergetyczne (poniżej 141 keV)
+
+Różnią się wielkością otworów, grubością ścianek
+
+Kolimatory typu pinhole (jego działanie opeira się na działaniu kamery Obscura, naprzykład przy badaniach tarczycy (małych narządów))
+
+Dawniej korzystano z:
+Kolimatory dywergentne i konwergentne
+
+cal - ok 2.5 cm
+PMT - photo multiplier tube
+FWHM
+
+Układy korekcji
+
+Badanie WholeBody
+
+Flood image, Bar-phantom image
+
+Korekcja nieidealności gammakamery
+
+Tworzenie obrazu w komputerze:
+Akwizycja statyczna:
+Procesor bierze zawartość wszytskich komórek zarezerwowanych dla obrazu. Kiedy otrzymuje STROB, zatrzymuje wyświetlanie. Przechodzi do obsługi przerwania. Zczytuje X i Y i tworzy adres komórki pamięci ($A = 256Y + X + B_0$). $B_0$ - komórka bazowa, od której zaczyna się zarezerwowana pamięć na obraz. Pod tym adresem dodaje 1.
+
+Akwizycja dynamiczna:
+1. Najpierw robimy akwizycję statyczną pierwszego obrazu, następnie przesuwamy się w pamięci o obszar jednego obrazu i dokonujmy akwizycji statycznej, itd. Z góry zakładamy czas akwizycji każdego obrazu.
+
+2. List mode pozwala na zapamiętanie wszystkich zdarzeń i uszeregowania ich w czasie. Zapamiętujemy X i Y które zaszły w określonym czasie (np. 10 ms).
+
+Obrazy parametryczne - do określenia parametrów badanego obszaru
 
 \end{document}
