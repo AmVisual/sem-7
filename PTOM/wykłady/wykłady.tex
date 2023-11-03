@@ -280,13 +280,137 @@ Korekcja nieidealności gammakamery
 
 Tworzenie obrazu w komputerze:
 Akwizycja statyczna:
-Procesor bierze zawartość wszytskich komórek zarezerwowanych dla obrazu. Kiedy otrzymuje STROB, zatrzymuje wyświetlanie. Przechodzi do obsługi przerwania. Zczytuje X i Y i tworzy adres komórki pamięci ($A = 256Y + X + B_0$). $B_0$ - komórka bazowa, od której zaczyna się zarezerwowana pamięć na obraz. Pod tym adresem dodaje 1.
+Procesor bierze zawartość wszytskich komórek zarezerwowanych dla obrazu. Kiedy otrzymuje STROB, zatrzymuje wyświetlanie. Przechodzi do obsługi przerwania. Zczytuje X i Y i tworzy adres komórki pamięci ($A = 256Y + X + B_0$). $B_0$ - komórka bazowa, od której zaczyna się zarezerwowana pamięć na obraz. Pod tym adresem dodaje 1. Naprzykład przy badaniach tarczycy.
 
 Akwizycja dynamiczna:
 1. Najpierw robimy akwizycję statyczną pierwszego obrazu, następnie przesuwamy się w pamięci o obszar jednego obrazu i dokonujmy akwizycji statycznej, itd. Z góry zakładamy czas akwizycji każdego obrazu.
 
-2. List mode pozwala na zapamiętanie wszystkich zdarzeń i uszeregowania ich w czasie. Zapamiętujemy X i Y które zaszły w określonym czasie (np. 10 ms).
+2. List mode pozwala na zapamiętanie wszystkich zdarzeń i uszeregowania ich w czasie. Zapamiętujemy X i Y które zaszły w określonym czasie (np. 10 ms). (255,255) jest znacznikiem oddzielającym kolejne chwile zbierania danych.
 
 Obrazy parametryczne - do określenia parametrów badanego obszaru
+
+Np. wyznaczanie regionu zainteresowania - zbieranie natężenia z wybraego obszaru, czas osiągnięcia maksimum.
+
+3. Akwizycja bramokowana - synchronizowana zewnętrznym impulsem (badania angiokardiografii izotopowej). Na początku wyznaczamy ilość impulsów na sekundę. Obrazy z poszczególnych przedziałów czasu sumujemy, uzyskując obraz pracy serca.
+
+Na kolokwium:
+Przy badaniu statycznym (losowy charakter rozpadu i akwizycji)
+Czy guz jest gorący czy zmiany
+
+$n_0 - l.impulsow/sek/cm^2$ - obszar normalny
+
+$n_1 - l.impulsow/sek/cm^2$ - obszar patologii
+
+$n_1 * \Delta S * \Delta t + k\sqrt{n_1 \Delta S Delta t} < n_0 \Delta S \Delta t$ - delta t to czas akwizycji, $k=3$ p. 0,99, $k=2$ p. 0,91, k=1 . 0,73 - prawdopodobieństwo wykrycia guza zimnego
+
+Dla guza gorącego w powyższym znaku zmieniamy "+" na "-" i zmienamy kierunek nierówności.
+
+\section{Wykład (25.10.2023)}
+
+\subsection{Ultrasonografia}
+
+Metoda obrazowania narządów wewn. przy pomocy fal akustycznych - ultradźwiękowych.
+
+Głowica z piezoelektrykiem.
+
+Wykorzystywane zjawisko odbicia od struktur różniących się imepdancją akustyczną, a która zależy od gęstości ośrodka.
+
+Powracająca fala nazywana jest echem.
+
+Zjawisko Dopplera
+
+Ultrasonografia Dopplerowska
+
+Niska rozdzielczość (lepsza od scyntygrafii, ale gorsza od radiologii)
+
+Przetworniki, które pełnią rolę nadajnika i odpbiornika sygnałów akustycznych.
+
+W tkankach miękkich i wodzie fale podłużne
+
+W tkankach twardych fale poprzeczne.
+
+Podstawowe parametry fali:
+\begin{itemize}
+    \item częstotliwość
+    \item prędkość
+    \item dł. fali
+    \item amplituda
+    \item natężenie
+\end{itemize}
+
+częstotliwość
+
+0 - 20 Hz - infradźwięki
+
+20 Hz - 20 kHz - dźwięki słyszalne
+
+pow. 20 kHz - ultradźwięki
+
+50kHz - 600 kHz - badania kości
+200 kHz - 5 MHz - badania przepływów
+2 MHz - 10 MHz - obrazowanie tkanek wewn. - najczęściej stosowane
+
+Prędkośc rozchodzenia się ultradźwięków - zależy od właściwości ośrodkach
+
+$v \sim E / \rho $
+
+$E [N/m^2]$ - sprężystość (modół Younga)
+
+$\rho$ - gęstość
+
+Wartości prędkości są zbliżone
+
+$s = v * t$
+
+Długość fali $\lambda = v / f$
+
+Amplituda fali
+
+Konkretnie interesuje nas stosunek amplituda fali padającej do odbitej (amplituda względna) (amplituda powracająca mierzona w decybelach).
+
+$A_rel = 20 \log{A/A_0}$
+
+Oddziaływanie ultradźwięków z materią
+
+Osłabienie w [dB]
+
+Tłumienie T
+
+$T = \alpha * f * x$ - alfa współczynnik tłumienia (tłumienie zależy wykladniczo od częstotliwości, bo tłumienie jest w dB)
+
+Odbicie $R = I_R / I_0 = (z_1 - z_2)^2 / (z_1 + z_2)^2$ ($z = \rho * v$ - oporność akustyczna zależy od sprężystości materiału)
+
+Strata amplitudy podczas odbicia
+
+TGC (time gain control) - wzmacniacz, którego wzmocnienie zależy od czasu.
+
+Gen -> Sonic -> fala ultradźwiękowa -> Sonic -> TGC -> Display
+
+Kolokwium (narysowanie zależności amplitudy fali dźwiękowej od głębokości tkanki (rozchodzenie się fali w tkance)) 
+
+4 rodzaje obrazów USG
+
+- typu A (amplituda) (wzmacniecz - wzmocnienie narasta w czasie
+
+- typu B (brightness) - najczęściej stosowany (kątowy przetwornik)
+
+- typu M (motion) - otrzymujemy obraz struktury w ruchu, propagacja fali w jednym kierunku
+
+- typu D (Doppler) - zaburzenia w przepływie krwi w naczyniach krwionośnych
+
+Głowica USG
+
+Kształtowanie fali ultradźwiękowego. Fale z kazdego kryształu interferują ze sobą tworząc falę wynikową skupioną na określonym przez nas obszarze.
+
+Rodzaje głowic:
+\begin{itemize}
+    \item liniowa
+    \item konweksowa
+    \item trapezoidalna
+    \item sektorowa (wysyła fale w pewnym sektorze) - wady: 1. powtarzające się obszary przy przesuwaniu, 2. pojawia się obszar martwy
+    \item pierścieniowa
+    \item wewnątrznaczyniowa
+    \item intro-waginalna i intro-rektalna
+\end{itemize}
 
 \end{document}

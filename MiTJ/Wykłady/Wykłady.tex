@@ -1,6 +1,10 @@
 \documentclass{article}
 \usepackage{polski}
 \usepackage{hyperref}
+\usepackage[margin=2.5cm]{geometry}
+
+\setlength{\parindent}{0pt}
+
 \title{Metody i Techniki Jądrowe - wykąłdy}
 \author{Maciej Standerski}
 \begin{document}
@@ -363,5 +367,214 @@ Generator Greinachera lub Cockrofta-Waltona
 Generator Van de Graffa (domianą detektora typu Van de Graffa jest tzw. Pelletron)
 
 Akceleratory typu tandem
+
+\section{Wykład (27.10.2023)}
+
+\subsection{Źródła promieniotwórcze dla celów medycznych}
+
+Radionuklidy i radioizotopy - jakie cechy powiiny mieć:
+
+1. Okres rozpadu taki, aby zapewnić optymalny stosunek uzyskiwanej informacji badanego organu do dawki pormieniowania aplikowanej w zabiegu
+2. promieniowanie gamma, nie pownno zawierać prom. alfa i beta (wyjątek stanowi diagnostyka PET)
+3. Energia emitowanych fotonów zawiera się w zakresie 100 - 150 keV. Dla wyższych trudna kolimacja wiązki
+4. Związki chem. które umożliwiają wchłanianie do badanych organów i szybkie wydalanie z organizmu
+
+Stosowane metody otrzymywania źródeł dla cełow medycznych:
+1. Reakcje zachodzące pod wpływem neutronu z reaktora jadrowego (w reaktorze powstają ogromne ilości neutronów, neutony emmitowane w reakjci rozszczepienie, do reaktora wstawiane są próbki takich izotopów, które pod wpływem neutronów ulegają aktywacji, dzięki czemu uzyskujemy związki aktywne wykorzystywane w medycynie)
+2. Reakcje wywoływane przez cząstki naładowane przyspieszane w akceleratorach
+3. Nuklidy uzyskiwane w reakcjach rozszczepienia ciężkich jąder atomowych - sposób uzyskania dla celów medycznych w tej metodzie są inne niż w pkt. 1 i 2
+
+Aktywność zależy od:
+1. czas napromienienia izotopu wyj.
+2. Przekrój czynny reakcji jądrowej
+3. stała rozpadu izotopu produkowanego
+4. wielkość tarczy wyrażana przez liczbę jąder w jednostce objętości
+5. gęstość struminia wyrażana w liczbie cząstek na jednostkę czasu
+
+Aktywność nasycenia - wzór
+
+Produkcja źródeł promieniotwórczych w reaktorze jądrowym
+
+Reakcje wywołwyane są przez neutory termiczne, w wyniku których następuje powstanie radioizotopów.
+
+Nuklidy prom. uzyskiwane w reakcjach rozszczepienia wykorzystywane do celów medycznych:
+\begin{itemize}
+    \item Mo-99
+    \item I-131
+    \item Xe-133 
+\end{itemize}
+
+Wykres: rozkład liczb masowych produktów roszczepienia, które pojawiają się w wyniku rozszczepienia jądra uranu-235
+
+Najczęściej używany radioizotop w celach medycznych: technet-99m
+
+Spełnia wszystkie wymagania radioizotopów:
+\begin{itemize}
+    \item czas połowicznego rozpadu: 6h
+    \item enrgia emitowanego promieniowania gamma - 140 keV, optymalna do rejestracji przez detektory scyntylacyjne NaI(Tl) (jodek sodu aktywowany talem)
+    \item pozyskiwanie możliwe jest z pomocą łatwych w transporcie generatorów, może być generowany w stacjach diagnostycznych
+    \item promieniowaniu gamma nie towarzyszy inny rodzaj promieniowania, emisja fotonów jest rezultatem przejścia ze stanu izomerycznego tego izotopu do stanu podstawowego
+\end{itemize}
+
+SPECT - źródło emitujące fotony znajduje się wewnątrz ciała człowieka
+
+Izotop technetu-99m uzyskiwany jest podczas rozpadu beta- izotopu Molibdenu-99. Okres rozpadu Mo-99 to 66 h. W wyniku przejścia technetu-99m ze stanu izomerycznego do stanu podstawowego emitowany jest foton o energii 0.141 MeV. Ta energia wykorzystywana jest do diagnostyki medycznej.
+
+Stan izomeryczne - emisja fotonu z tego stanu następuje z opóźnieniem
+
+Generator technetu:
+Po usyskaniu Tc-99m odrazu wstrzykujemy go do ciała pacjenta.
+
+W kolumnie znajduje się $Al_2O_3$ z zaabsorbowanym molibdenem sodu ($Na_2^{99}MoO_4$). Kolumna w grubej osłonie ołowianej. Fiolka niebieska zawiera sól fizjologiczną. Czerwona fiolka ma wypompowane powietrze, co umożliwa proces zasysania.
+
+Znajdujący się pod fiolką filtr przeciwbakteryjny zapewnia sterylność zasysanego roztworu.
+
+Generator wymywa (elucja) przez sól fizjologiczną (eluent) z kolumny, powstający w skutek rozadu molibdenu, metastabilny izotop technetu-99m w postaci nadtechnetu sodu ($Na^{99m}TcO_4$) (eluat)
+
+Rozpad sukcesywny dla molibdenu i technetu
+
+Technetu nie może być dużo więcej niż molibdenu, gdyż czas rozpadu techentu jest prawie 11 razy krótszy niż molibdenu. Stąd aktywność sukcesywna układu Mo-Tc 
+
+Porowata powierzchnia, ponieważ następuje proces adsorpcji.
+
+Wykres - zmiana aktywności zawartego w kolumnie mlibdenu i technetu dla przypadku, kiedy technet jest codzienne usuwany z generatora (co 24 h).
+
+\subsection{Generator neutronów w przemyśle}
+
+Nie ma źródeł, które bezpośrednio rozpadałyby się z emisja neutornu
+
+Potrzbne są reakcje fuzji jadrowej:
+$D+D \rightarrow T (1.01 MeV) + p (3.02 MeV) (50\%)$
+
+$D+D \rightarrow ^3He (0.82 MeV) + n (2.45 MeV)$
+
+Inna reakcja:
+$D+T \rightarrow ^4He4 (3.5 MeV) + n (14.1 MeV)$
+
+Aby mogło dojść do tych reakcji, jony muszą pokonać barierę kulombowską wynikającą z działającej pomiędzy nimi odpychającej siły elektrostatycznej. Realizuje się to przez przyspieszanie wiązki jonów deuteronów lub\slash i trytonów do energii ok 100-1509 keV i doprowadzenie do zderzeń przyspieszonych jonów z tarczą zawierającą także deuterony lub \slash i trytony. Tarcza ma postać wodorku tytanu\slash skandu\slash cyrkonu.
+
+Energia neutornu jest 4x większa niż energia cząstki alfa.
+
+Reakcja wykorzystywana do uzyskiwania wiązek neutornów o energii 14.1 MeV.
+
+Przemysł wykorzystanie - Misisterstwo Budwy Dróg i Mostów (badanie struktury gleby i skał).
+
+\subsection{Wiązki promieniowania jonizującego - kontynuacja}
+
+$a = qE / m$ - przyspieszenie cząstki o ładunku $q$ i masie $m$ w polu el. $E$.
+
+$r = \frac{mv}{qB}$ - promień, z jakim cząstka zatacza okrąg w polu magnteycznym
+
+Symulacja działania pelletronu: \href{https://www.pelletron.com/wp-content/uploads/2018/12/pelletron-animation.gif}{Pelletron animation}
+
+Akceleratory liniowe - generowane jest napięcie zmienne, do co drugiego segmentu. Jony w ekranach poruszają się ze stałą prędkością. Pomiędzy segmentami jony są przyspieszane. Energie jonów uzyskiwanych z użyciem akceleratorów liniowych są rzędu keV.
+
+Inne rozwiązanie akceleratora liniowego zaproponował Alvarez. (wukorzystanie stojącej fali EM).
+
+Inny sposób do przyspieszania elektronów: przy bardzo dużych energia elektorny mają prędkości relatywistyczne. Do przyspieszenia wykorzystuje się bieżącą falę elektromagnetycznczą. Ruch elektronu można porównać do ruchu surfera na fali. Cząstka porusza się na "zboczu fali" EM.
+
+Akceleratory kołowe - aby uzyskać energie większe niż w akceleratorach liniowych. Do przyspieszania ciężkich jonów.
+
+Cyklotron
+
+$r = \frac{mv}{qB} = \frac{AM_nv}{qB} = \frac{M_nv}{(q/A)B}$
+
+Liczba obrotów jakie wykonuje cząstka wykonuje w jednostce czasu: $\nu  = 1/T = \frac{v}{2\pi r} = \frac{(q/A)B}{2\pi M_n}$
+
+Elektrony w cylindrze zderzają się z atomami wprowadzanymi do cylindra, jonizując je. Następnie jony są ściągane za pomocą pola el. stanowiącego extrakotr. Jony następnie dostają się do obszaru działania pola magnetycznego. Ponieważ promień ruchu cząstek w polu magn. zależy od ich ładunków, dzięki temu możemy dokonać selekcji jonów w zależności od ładunku.
+
+Obszary, gdzie działa pole magnetyczne nazywamy duantami (biegunnikami). Pomiędzy duantami znajduje się natomiast pole el., które rozpędza jony. Generator pola elektrycznego ma tak dobraną częstotliwość zmian kierunku pola el. (częstotliwość cyklotronowa), aby cząstki zawsze były przez nie przyspieszane. Pole to jest zsynchronizowane z ruchem cząstek.
+
+Co należy uwzględnić przy budowie cyklotronu: relatywistyczny przyrost masy, który może spowodować desynchronizację ruchu jonów i pola el. (zmieniamy pole elektryczne w funkcji cząstek), wyprowadzenie wiązki z pola w odpowiednim momencie
+
+Akcelerator synchroniczny
+
+System ogniskowania wiązki w jonowodach (jony wyprowadzone z akceleratora odpychają się siłami kulombowksimi. Aby wiązka się nie rozszerzyła (jony nie uległy rozproszeniu), stosowane są systemy ogniskowania wiązek).
+
+Transport i ogniskowanie wiązki (jonowody)
+
+Magnesy kwadrupolowe (cząstki poruszające się lewo\slash prawo jest ogniskowana w kierunku poziomym, poruszające góra\slash dół ogniskowane w kierunku pionowym)
+
+Magnesy dipolowe służą do zmiany kierunku wiązki.
+
+Synchrotron - wraz ze wrostem relatywistycznym masy cząstki, zwiększane jest pole magnetyczne, co sprawia, że promień ruchu cząstki jest zachowany.
+
+Synchrotron w RHIC Brookhaven National Laboratory (USA) (IF PW bierze udział w projekcie STAR)
+
+CERN: LHC (Large Hadron Collider) gdzie przeprowadzane są 4 eksperymenty: ATLAS, ALICE, CMS, LHCb.
+
+\subsection{Propagacja promieniowania jonizującego w ośrodku materialnym}
+
+Oddziaływanie promieniowania jonizującego z materią pozwala na jego detekcję.
+
+Promieniowanie alfa może być zatrzymane przez naskórek, ale jest niebezpieczne, gdy dostanie się do wnętrza organizmu człowieka.
+
+Promieniowanie beta można zatrzumać przy użyciu kilku milimetrowej wartswy aluminium.
+
+Prom. gamma nie przeniknie przez grubą warstwę ołowiu.
+
+Wiązkę neutronów może zatrzymać b. gruba warstwa betonu.
+
+Przekrój czynny
+
+Liczba usuniętych z wiązki cząstek jest proporcjonalna do grubości warstwy materiału (liczba cząstek "usuniętych z wiązki" mogły zostać albo pochłonięte, albo rozproszone. To że cząstki nie znajdują się w wiązce, nie oznacza, że cząstki zostały w pełni pochłonięte przez materiał. To może równiż oznaczać, że część cząstek rozproszyła się na materiale i nie zostały one wychwycone przez detektor):
+
+$dn = -\sigma \cdot n \cdot N \cdot dx$
+
+$N [cm^{-3}]$ - liczba cząstek centrum rozpraszania
+
+$\sigma [cm^2]$ - przekrój czynny przypadający na jedno centrum rozpraszające (kolokwium)
+
+Stosowaną jednostką powierzchni przekroju czynnego jest barn $[1\mathrm{barn}=10^{-24} cm^2]$
+
+$\frac{dn}{n} = -\sigma N dx$ - jeśli zmiana jest na tyle mała, to można stosować ten wzór (dx jest infinitezumalnie mała)
+
+$n = n_0e^{-\sigma N x}$ - prawo opisujące osłabienie wiązki promieniowania przechodzącej. $n$ jest liczbą cząstek, które pozostały w cząstce. Liczba cząstek które zostały usunięte z wiązki wynosi:
+
+$n_0 - n = n_0(1-e^{-\sigma N x})$
+
+Iloczyn $\sigma N = \mu_x [cm^{-1}]$ jest nazywany liniowym współczynnikiem osłabienia wiązki (kol).
+
+Grubość materiałów wyraża się w gęstości powierzchniowej $d = \rho x [g/cm^2]$ (kol).
+
+Jeśli stosujemy gęstość powierzchniową, to w równaniu na prawo osłabienia wiązki korzystamy z masowego współcz. osłabienia: $\mu_d=\frac{\mu_x}{\rho} (kol)$
+
+Średnia droga swobodna $\lambda = 1/\mu$, jeżeli mamy masowy współczynnik osłabienia, to droga swobodna jest wyrażana w [$g/cm^2$]. (kol)
+
+Rozproszenie cząstek wiązki jonizującej może nastąpić pod różnymi kątami:
+
+- kąt rozporszenia (kol)
+- kąt bryłowy (zależy od kąta $\theta$ (zenitalny) i kąta $\phi$ (azymutalny)) (kol)
+
+$d\sigma = \sigma(\theta,\phi)d\Omega$
+
+Elementy kinematyki relatywistycznej
+
+Masa spoczynkowa cząstki $m_0$.
+
+Masa relatywistyczna cząstki $m$.
+
+Równanie łączące masę cząstki z jej energią:
+$E = mc^2$
+
+$\gamma = 1/\sqrt{1-/beta^2}$ - współczynnik Lorentza (zakres ), gdzie $\beta = v/c$.
+
+$\gamma = m/m_0$
+
+Pełna energia cząstki wynosi:
+$E = E_k + m_0c^2$, gdzie drugi człon jest energią spoczynkową cząstki.
+
+Relatywistyczny związek pomiędzy masą, energią i pędem cząstki:
+
+$E = \sqrt{m_0^2c^4 + p^2c^2}$
+
+Skrócenie Lorentza: $l' = l/\gamma$
+
+Dylatacja czasu: $t' = t\gamma$
+
+Wielkość "rapidity" (pośpieszność):
+$y = \frac{1}{2}\ln{\frac{E+p_z}{E-p_z}}$
+
+Wielkość ta jest addytywna względem transformacji Lorentza.
 
 \end{document}

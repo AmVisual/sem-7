@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.4)  20 OCT 2023 13:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.4)  27 OCT 2023 14:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -179,90 +179,142 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip50
+) (c:/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (c:/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count271
+\Gm@cntv=\count272
+\c@Gm@tempcnt=\count273
+\Gm@bindingoffset=\dimen145
+\Gm@wd@mp=\dimen146
+\Gm@odd@mp=\dimen147
+\Gm@even@mp=\dimen148
+\Gm@layoutwidth=\dimen149
+\Gm@layoutheight=\dimen150
+\Gm@layouthoffset=\dimen151
+\Gm@layoutvoffset=\dimen152
+\Gm@dimlist=\toks18
 ) (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count271
+\l__color_backend_stack_int=\count274
 \l__pdf_internal_box=\box51
 ) (./Wyk≈Çady.aux)
 \openout1 = `Wyk≈Çady.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-Package hyperref Info: Link coloring OFF on input line 6.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+Package hyperref Info: Link coloring OFF on input line 10.
  (./Wyk≈Çady.out) (./Wyk≈Çady.out)
 \@outlinefile=\write3
 \openout3 = `Wyk≈Çady.out'.
 
-LaTeX Font Info:    Trying to load font information for OML+plm on input line 8.
- (c:/texlive/2023/texmf-dist/tex/latex/polski/omlplm.fd
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=652.70622pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Trying to load font information for OML+plm on input line 12.
+(c:/texlive/2023/texmf-dist/tex/latex/polski/omlplm.fd
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 8.
+LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 12.
  (c:/texlive/2023/texmf-dist/tex/latex/polski/omsplsy.fd
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Trying to load font information for OMX+plex on input line 8.
+LaTeX Font Info:    Trying to load font information for OMX+plex on input line 12.
  (c:/texlive/2023/texmf-dist/tex/latex/polski/omxplex.fd
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 8.
+(Font)              <12> on input line 12.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 8.
+(Font)              <8> on input line 12.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 8.
+(Font)              <6> on input line 12.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10> on input line 25.
+(Font)              <10> on input line 29.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <7> on input line 25.
+(Font)              <7> on input line 29.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <5> on input line 25.
- [1
+(Font)              <5> on input line 29.
 
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plmi.enc}] [2{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [3{c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plms.enc}] [4{c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plsc.enc}] [5] [6] [7{c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plme.enc}] [8]
-Overfull \hbox (5.86166pt too wide) in paragraph at lines 324--326
-[]\OT4/cmr/m/n/10 Istniej° czte-ry sze-re-gi pro-mie-nio-twÛr-cze: to-ro-wy, na-ptu-no-wy, uranowo-radowy,
+Overfull \hbox (61.27597pt too wide) in paragraph at lines 53--54
+[]\OT4/cmr/m/n/10 Diagram fa-zo-wy ma-te-rii ha-dro-no-wej (przej-±cie po-mi¶-dzy fa-z° ha-dro-no-w° a fa-z° kwarkowo-gluonow°, $1\OML/plm/m/it/10 eVodpowiada\OT4/cmr/m/n/10 11000\OML/plm/m/it/10 K$\OT4/cmr/m/n/10 ,
  []
 
-[9] (./Wyk≈Çady.aux)
+[1
+
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2] [3{c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plms.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plsc.enc}] [4] [5{c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plme.enc}] [6] [7] [8] [9] [10] (./Wyk≈Çady.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `Wyk≈Çady.out' has not changed.
-(rerunfilecheck)             Checksum: 71D7EE2D411B2D8FE4CFBB6CEC569E00;4694.
+(rerunfilecheck)             Checksum: B489ED332643817407324256A8667FCA;6073.
  ) 
 Here is how much of TeX's memory you used:
- 7868 strings out of 474928
- 121997 string characters out of 5763562
- 1927785 words of memory out of 5000000
- 29291 multiletter control sequences out of 15000+600000
+ 8361 strings out of 474928
+ 129500 string characters out of 5763562
+ 1931785 words of memory out of 5000000
+ 29772 multiletter control sequences out of 15000+600000
  568047 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,849b,497s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,79p,849b,491s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plmi5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Wyk≈Çady.pdf (9 pages, 130453 bytes).
+Output written on Wyk≈Çady.pdf (10 pages, 147927 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
- 200 compressed objects within 2 object streams
- 47 named destinations out of 1000 (max. 500000)
- 177 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 267 PDF objects out of 1000 (max. 8388607)
+ 224 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
+ 217 words of extra memory for PDF output out of 10000 (max. 10000000)
 
