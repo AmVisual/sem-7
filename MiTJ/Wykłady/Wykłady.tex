@@ -529,7 +529,7 @@ Stosowaną jednostką powierzchni przekroju czynnego jest barn $[1\mathrm{barn}=
 
 $\frac{dn}{n} = -\sigma N dx$ - jeśli zmiana jest na tyle mała, to można stosować ten wzór (dx jest infinitezumalnie mała)
 
-$n = n_0e^{-\sigma N x}$ - prawo opisujące osłabienie wiązki promieniowania przechodzącej. $n$ jest liczbą cząstek, które pozostały w cząstce. Liczba cząstek które zostały usunięte z wiązki wynosi:
+$n = n_0e^{-\sigma N x}$ - prawo opisujące osłabienie wiązki promieniowania przechodzącej. $n$ jest liczbą cząstek, które pozostały w cząstce. Liczba cząstek (prawo osłabienia wiązki, nie stosujemy dla ciężkich cząstek) które zostały usunięte z wiązki wynosi:
 
 $n_0 - n = n_0(1-e^{-\sigma N x})$
 
@@ -576,5 +576,181 @@ Wielkość "rapidity" (pośpieszność):
 $y = \frac{1}{2}\ln{\frac{E+p_z}{E-p_z}}$
 
 Wielkość ta jest addytywna względem transformacji Lorentza.
+
+\section{Wykład (3.11.2023)}
+
+Przed wizytami należy podać Imię, Nazwisko, nr dowodu osobistego lub legitymację
+
+\begin{itemize}
+    \item 1 grudnia - Świerk 8:00 wyjazd sprzed Gmachu głównego
+    \item 8 grudnia - Składowisko odpadów promieniotwórczych 8:00 wyjazd
+    \item 15 grudnia - Instytut Fizyki Plazmy
+    \item 22 grudnia - Środowiskowe Lab ciężkich jonów
+    \item 
+    \item 12 Stycznia - CLOR
+\end{itemize}
+
+Do instytutów warszawskich dojazd we własnym zakresie
+
+24 października - wykład Wacław Gudowski - obecność obowiązkowa
+
+\subsection{Propagacja promieniowania jonizującego w ośrodku materialnym - kontynuacja}
+
+Aplikacja - Kinematyka relatywistyczna
+
+\subsubsection{Oddziaływanie z materią promieniowania gamma}
+
+Komora pęcherzykowa - detektor śladowy promieniowania jonizującego. Proces wrzenia cieczy zachodzi na niejednorodnościach, czyli w tym przypadku na śladach pozostawionych przez cząstki promieniowania jonizującego. Ze wstrzykiwaniem cząstek do komory synchronizuje się błysk, który powoduje obniżenie ciśnienia wewnątrz komory, i co sprawia, że ścieżki zostają utrwalone.
+
+Ciekły ksenon, gęstość 2x większa niż gęstość wody. Między punktami A i B oraz A i C przeleciał foton, który nie pozostawił za sobą śladu. Dopiero w punktach B i C nastąpiły generacje par elektron-pozyton.
+
+Fotony oddziaływują z materią w następujący sposób:
+\begin{itemize}
+    \item zjawisko fotoelektryczne - pochłonięcie fotonu przez atom i emisja z powłoki leżącej w pobliżu jądra $\gamma + \mathrm{atom} \rightarrow \mathrm{atom}^+ + e^-$, $E_k = E_{\gamma} - W$, elektron Augere'a, $\sigma_{ph} = C\cdot \frac{Z^k}{E_{gamma}^n}$ - wzór na przekrój czynny, charakteryzuje prawd-stwo zajścia efektu fotoelektrycznego. Dla niskich energii $k=4.0$ i $n=3.5$, dla bardzo wysokich $k=4.6$ i $n=1.0$
+    \item efekt Comptona - rozproszenie fotonu na qausiswobodnym elektronie. Część energii fotonu pozostaje w materiale, w przeciwieństwie do zjawiska fotoelektrycznego. $\gamma + e^- \rightarrow \gamma' + e^{-'}$, $E_1 = \frac{E_0}{1 + \alpha(1-\cos\theta)}$, gdzie $\theta$ jest kątem rozproszenia, $\alpha = E_0/m_0c^2$ jest stosunkiem energii fotonu do energii spoczynkowej elektronu. Komptonowska długośc fali elektronu: $\lambda_C = \frac{h}{m_0c}$, a $\Delta \lambda$ jest przesunięciem komptonowskim. Kiedy następuje rozproszenie pod małym kątem, a kiedy pod dużym? Wzór Kleina-Nishiny opisuje rozkład kątowy rozproszenia fotonu w efekcie Comptona. Przekrój czynny $\sigma_C^3 \propto \frac{\ln \epsilon}{\epsilon}$, w stanie końcowym mamy dwie cząstki, zatem przekrój czynny składa się z dwóch części, w jednym jest foton rozproszony, w drugim elektron rozproszony. $\sigma_{CS} = \frac{E_{\gamma}'}{E_{\gamma}}\sigma_C^e$, $\sigma_{ca} = \sigma_C^e - \sigma_{CS}$. Rozproszone elektrony i fotony mogą być groźne dla zdrowia.
+    \item zjawisko tworzenia par elektron-pozyton. $\gamma + (A,Z) \rightarrow e^+ + e^- + (A,Z)$, zjawisko to nie może zajść w próżni, w zjawisku musi towarzyszyć trzecie ciało (jądro atomowe), energia fotonu musi być większa od energii spoczynkowej razem elektronu i pozytonu. Przekrój czynny: $\sigma_p = \left(\frac{e^2}{m_0c^2}\right)^2\alpha Z^2 f(E_{\gamma})$, gdzie $\alpha = 137$
+\end{itemize}
+
+Współczynniki osłabienia wiązki pochłaniania (absorpcji) - współczynnik charakteryzujacy to, ile promieniowania zostało zaabsorbowane w ciele\slash materiale.
+
+Rys. 3.2.8. - zapamiętać rysunek, bo trzeba będzie go narysować na kolokwium
+
+Kiedy elektron zostaje wyhamowywany i jego kierunek ruchu zostaje zmieniony, emitowany jest foton, nazywamy to promieniowaniem synchrotronowym.
+
+\subsubsection{Oddziaływanie z materią ciężkich cząstek naładowanych}
+
+Cząstki ciężkie to takie o masie znacznie większej od masy elektronu.
+
+Starty energii cząstki na wytworzenie jednej pary jonów zależą od rodzaju materiału dla gazów nie różnią się zbytnio i wynoszą kilkadziesiąt eV, np. dla powietrza ok. 35 eV.
+
+Na wyhamowanie cząstek ciężkich wymagane jest wiele aktów jonizacji.
+
+Formuła Bethe-Bloch'a
+
+\textbf{Charakter promieniowania pod względem zasięgu}
+
+Zasięg wiązki fotonów w materii jest nieskończony. Ma charakter probabilistyczny.
+
+W przypadku cząstek ciężki cząstka jest wyhamowywana przez materię. Promieniowanie cząstek ciężkich ma charakter zasięgowy.
+
+Średnie straty energii
+
+Zasięg cząstki w materiale
+
+Formuła Bethe-Blocha - jakie są średnie straty jonizacyjne na jednostkę długości drogi ($r_e$ - klasyczny promień elektronu, $I$ - potencjał jonizacyjny, $\delta$ - czynnik uwzględniające ekranowanie cząstki padającej przez pole lektronów ośrodka)
+
+Rys. 3.2B.1 - na kolokwium (starty energii na jednostkę długości drogi w powietrzu dla kulu typów cząstek)
+
+Pomiary strat jonizayjnych
+
+Promieniowanie Czerenkowa - powstaje, gdy cząstka przechodzi przez dany ośrodek z prędkością większą niż prędkość światła w tym ośrodku.
+
+Zeleżność liczby ciężkich cząstek naładowanych danego typu i energii od długości ich drogi w absorbencie (ważne np. dla terapii hadronowej)
+
+Droga w absorbencie - na kolokwium. Im większe są straty jonizaycjne, tym większa musi być gęstość jonizacji absorbenta. Dlatego gęstość rośnie wraz z drogą w absorbencie, aż do pewnego momentu, kiedy coraz więcej cząstek ulega wyhamowaniu, cząstek zaczyna być coraz mniej w wiązce, i coraz mniejsza jest jonizacja. Ta zależność wiąże się z poprzednią zależnością liczby cząstek i energii długości ich drogi w absorbencie.
+
+Krzywa Bragga
+
+\section{Wykład (24.11.2023)}
+
+Gość wykładu: prof Wacław Gudowski
+
+4 generacja reaktorów jadrowych a SMRy (Small Modular Reactor)
+
+ADS - accelerator driven system
+
+HTR - High Temperature Reactor (Reaktor wysokotemperaturowy)
+
+Każda przemiana energii z jednej w inną formę energii związana jest ze stratami: sprawność określa wielkość takich strat
+
+Ciepło odpadowe - energia tracona na sposób cipła, niewykorzystywana w procesie generowana energii (w SMRach stara się zniwelować ciepło odpadowe).
+
+Energetyka - dział nauki, który zajmuje się przetwarzaniem dostępnych form energii na postać łatwą do wykorzystania przy zasilaniu wszelkich procesów przemysłowych, a także napędzaniu maszyn i urządzeń używanych w życiu codziennym.
+
+Źródła: neodnawialne (spalanie paliw kopalnych), odnawialne (słoneczna, wiatrowa, geotermalna, biomasa, wodna), pierwotne (energia jądrowa, zrównoważona).
+
+Wytwarzanie energii el.:
+\begin{itemize}
+    \item procesy elektrochemiczne jak w bateriach
+    \item efekt termoelektryczny
+    \item poruszające się pole magnetyczne
+    \item paliwa ogniwowe
+    \item efekt fotowoltaiczny
+    \item efekt piezoelektryczny
+\end{itemize}
+
+Reakcja jądrowa:
+
+W wyniku rozszczepienia powstają produkty (jądra), które posiadają dużą energię kinetyczną. Energię tą oddają do otoczonia w postaci ciepła (podgrzewają wodę). Dodatkowo neutrony wywołują kolejne reakcje jądrowe oraz mogą być wchłaniane przez jądro uranu 238 tworząc wzbudzone jądro w wyniku czego powstaje w wyniku rozpadu promieniotwórczego Np239 i Pu239.
+
+W fuzji jądrowej:
+
+Większość energii zabiera neutron, energię od neutronu ciężko jest odebrać (trudniejsze niż odebranie energii od produktów rozszczepienia).
+
+Energia jadrowa jest najnowszą technologią energetyczną odkryta w latach 1938\slash 1942.
+
+Neutrony emitowane przez produkty rozpadu uranu pozwalają na sterowanie reaktora (reaktory opóźnione, neutorny te opóźniają procesy zachodzące w reaktorze)
+
+Najcięższy stablny izotop: Pb-82
+
+U-238 ma czas połowicznego rozpadu 4,6 mld lat (wiek Ziemi, rozpadowi uległa połowa jąder na Ziemi).
+
+Mnożenie neutronów - stosunek między ilością nautrnów w pokoleniu drugim do nautronów w pokoleniu pierwszym.
+
+Pochłonięcie rezonansowe - pochłonięcie neutronu przez jądro pierwiastka (piki na wykresie zależności przekroju czynnego od energii neutronu)
+
+P TNL - probability thermal non-leakage
+
+$k_eff$
+
+gdy współczynnik jest mniejszy niż 1, to nie ma reakcji.
+
+gdy współczynnik jest 1, to reakcja jest stabilna
+
+gdy współczynik jest większy niż jeden, to moc reaktora wzrasta
+
+stan krytyczny (powinno być stan stabilny)- moc się nie zmienia
+
+Uśredniony czas życia = ok. 0,08 s (czas reakcji reaktora rzędu kilku minut, a nie sekund - reaktory opóźnione)
+
+Sprzężenie zwrotne - naturalne mechanizmy które zmniejszają reakcję łańcuchowa.
+
+Sprzężenia temperaturowe (większośc sprzężeń jest negatywna, ale trzeba uważać na pozytywne)
+
+paliwo jądrowe, moderator (substancja, w której neutory maogą się poruszać bez strat), chłodziwo (transport energii do użytecznej części systemu, substancja odbierająca ciepło wygeneraowane przez rozszczepienia), zbiornik reaktora, pręty sterujace, obudowa bezpieczeństwa
+
+Uran z izotopem U-235 nazywa się uranem wzbogaconym.
+
+Promieniotwórczość jest odwrotnie proporcjonalna do czasu połowicznego rozpadu.
+
+Dobrym moderatorem jest ciężka woda, a drugim moderatorem jest grafit (pręty sterujące).
+
+Reaktory: BWR (z gotującą się wodą) i PWR (ciśnieniowe).
+
+Reaktor termiczny - na neutronach termicznych
+
+Reaktor prędki - na neutronach prędkich (niespowolnione)
+
+Dlaczego potrzebne są reaktory nowszego typu?
+
+Generacja 4 reaktorów:
+\begin{itemize}
+    \item chłodzony ciekłym sodem
+    \item chłodzony ciekłym ołowiem
+    \item chłodzony gazem
+    \item wysokotemperaturowy chłodzony gazem (warty rozwijania)
+    \item z nadkrytyczną parą wodną
+    \item na ciekłych solach (reaktor badawczy, ale nie komercyjny)
+\end{itemize}
+
+SMRy (moc do 300 MW)
+
+Kiur i ameryk nie śa dobre jako paliwo, ponieważ zależą od nich pozytywne sprzężenia zwrotne, które mogą prowadzić do sytuacji krytycznych. Dodatkowo w wyniku ich rozpadu powstaje mało neuutronów opóźnionych, co zmniejsza stopień kontroli reakcji łańcuchowej.
+
+C-14 5730 lat
+
+Autokar 1 grudnia 7:30.
+
+8 grudnia - wykład
 
 \end{document}

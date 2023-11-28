@@ -767,4 +767,453 @@ Kompensatory: od kompensacji, do modulacji (IMRT)
 
 Umiejscowienie MLC
 
+\section{Wykład (06.11.2023)}
+
+\subsection{Fizyczne parametry wiązki fotonowej}
+
+- Rozmiar pola napromieniania A
+
+- Głębokość terapeutyczna z - 10 cm dla Megawoltowych
+
+- odległość SSD i SAD (Source-Axis Distance - przy technice izocentrycznej)
+
+- Energia wiązki fotonów
+
+- Liczba wiązek użyta podczas terapii
+
+- Czas napromienienia - związana z wydajnością akceleatora i z dynamiką podawania wiązki.
+
+Fantom - objętość materiału tkankopodobnego, o wymiarach na tyle dużych aby zapewnić warunki pełnego rozproszenia stosowanej wiązki promieniowania.
+
+Zwykle materiały odpowiadające tkance miękkiej (woda), choć czasem stosuje się fantomy anatomiczne przypominające kształtem i gęstością do ciała pacjenta.
+
+Fantomy składane z warstw, czasami z otworami na detektory termoluminescencyjne.
+
+Fantom wodny - woda jako standardowy materiał, zarówno dla wiązek fotonów i elektronów
+
+Stosuje się również fantomy stałe - musi imitować wodę pod wzgl. gęstości, liczby el. w gtamie materiału, efektywnej liczbie atomowej $Z_{eff}$.
+
+Dla promieniowania $Z_{eff} = \sum_{i}^{} (a_i Z_i^2 / A) / \sum_{i}^{} (a_i Z_i / A)$
+
+Najważniejsze parametry do wyznaczania dawki promieniowania zewn.
+
+funkcje dozymetryczne stosowane dla całego zakresu
+\begin{itemize}
+    \item \% dawka głęboka (PDG)
+    \item współczynniki uwzględniające wielkość pola napromienienia
+    \item profil wiązki
+\end{itemize}
+
+funkcje dozymetryczne stosowane dla Co-60 i niższych energii
+
+Geometria standardowa
+
+Musimy wyznaczyć punkt pomiarowy na jakiejś głębokości. Głębokość związana jest z energią promieniowania. Z punktu widzenia terapii metoda polega na wyznaczeniu rozkładu dawki w geometrii standardowej a następnie ten rozkład jest korygowany a możliwie najlepiej opisywał rzeczywistość.
+
+$D_{rz}(x,y,z) = D_w(x,y,z)\prod_{n=1}^{N}k_n$, gdzie kn to współcz. poprawkowy uwzględniający n-ty efekt.
+
+Do obliczania współcz. wprowadza się specjalne parametry charakteryzujące wiązkę promieniowania.
+
+Stosuje się też metody Monte Carlo
+
+W IMRT tzw. planowanie odwrotne
+
+Poziom wydajności aparatu terapeutycznego (technika SSD):
+
+Wydajność mierzymy w fantomie wodnym lub stałym, głębokość w zależności od energii będzie 10 cm lub 5 cm. Odległość źródła od powierzchni fantomu taka jak...
+
+Jednostki monitorowe (MU - monitor units):
+
+Wydajność aparatu terapeutycznego - zależność między wskazaniami komory minitorowej wyrażonej w MU a dawką promieniowania zmierzoną w fantomie wodnym w warunkach referencyjnym. Definiuje się ją jako zmierzoną w wfantomie wodnym wartość dawki prom. wutworzonego przez dany aparat terapeutyczny w ściśle określonych warunkach referencyjnych.
+
+Pole z filtrem klinowym - oś komory jonizacyjnej skierowana równolegle do krawędzi przecięcia płaszyzn tworzących klin.
+
+$MD_{STklin} = W \cdot MD_{ST}$
+
+Określanie mocy dawki w fantomie w osi wiązki:
+
+$MD(g,S) = \frac{MD_{ST}\times q(S)}{PDG(5,S)}PDG(g,S)$ dla Co-60
+
+$MD(g,S) = \frac{MD_{ST}\times q(S)}{PDG(10,S)}PDG(g,S)$ dla energii megawoltowych
+
+Pola prostokątne i kołowe
+
+$AB/[2(A+B)] = A_{eq}^2/(4A_{eq})$
+
+$\pi r^2 = A_{eq}^2$
+
+Pole napromienienia geometryczne i dozymetryczne
+
+Fantom wodny - oznaczenia (metoda SSD)
+
+Procentowa dawka głęboka
+
+Technika SSD. Peak scatter factor (PSF): $PSF(A,h\nu) = \frac{D_p(z_{max}, A, f, h\nu)}{D_p(A, h\nu)}$
+
+Wpływ rozproszeń w fantomie na dawkę w osi centralnej
+
+Zaleśność od wielkości pola i od SSD
+
+Składowe dawki w fantomie
+
+Pole zmodyfikowane bloczkiem
+
+Określanie mocy dawki w fantomie w osi wiązki: $R(s,d) = PDD(s,d) \times SF(s) \times OF(s) \times X \times W$
+
+Technika izocentryczna
+
+Tissue Air Ratio ($TAR(s,d)$) - iloraz wartości mocy dawek zmierzonych w osi wiązki w fantomie na danej głębokości d i w powietrzu w warunkach równowagi elektronów.
+
+Związek TAR i PSF
+
+Tissue Phantom Ratio (TPR) - iloraz mody dawki zmierzonej na danej głębokości d oraz na głębokościach 5 lub 10 cm
+
+Określanie mocy dawki w fantomie w osi wiązki: moc dawki w izocentrum dla danej jakości promieniowania - $MD(d,S) = MD_{ST} \times c(S) \times TPR(d,S)$, c uwzględnia wielkość pola w izocentrum
+
+Tissue Maximum Ratio (TMR) - iloraz wartości mocy dawek mierzonych w fantomie w osi wiązki na danej głębokości i na głębokości maksymalnej dawki.
+
+Profil wiązki i korekty
+
+Fotoneutrony
+
+\subsection{Oddziaływanie neutronów z materią}
+
+Odziaływują pośrednio
+
+W zależności od energii neutrony dzielimy na: termiczne (0-0.1 eV), powolne, pośrednie, prędkie, wielkich energii
+
+Detekcja przez wychwyt na borze-10.
+
+Zatrzymywanie neutornów:
+Parafina, woda
+
+Oddziałwyanie z materią: rozpraszanie sprężyste lub niesprężyste, pochłanianie (wychwyt (radiacyjny lub z emisją) lub reakcje jądrowe (produkty naładowane lub produkty neutralne))
+
+Wtórne cząśtki naładowane (neutrony powodują znacznie wieksze skutki bilogiczne niż promieniowanie gamma).
+
+Aktywacja neutronowa
+
+System wielkości dozymetrycznych
+
+Dawka efektywna - suma dawek równoważnych od promieniowania zewn. i wewn. w najważniejszych tkankach i narządach.
+
+Przestrzenny równoważnik dawki $H^*(10) = D^*(10) \times Q^*(10)$
+
+Procesy generacji neutornów: reakcje elektron-neutron (e,n), gamma-neutron ($\gamma$,n)
+
+Generowane są w otoczeniu liniowych akceleratorów medycznych w powyżej wymieniownych reakcjach przy energiach pow. 6 MeV
+
+Radioterapia z modulowaną intensywnością (IMRT)
+
+Osłony: pierwsza warstwa służy do spowolnienia neutronów, następnie skuteznie pochłaniane przez B-10 lub kadm. Bor w postaci węglika boru B4C lub Boralu.
+
+\subsection{Obrazowanie w radioterapii}
+
+Rola obrazowania w radioterapii:
+\begin{itemize}
+    \item przy diagnozie, decyzji o terapii
+    \item obrazowanie przy planowaniu terapii
+    \item weryfikacja planu leczenia
+    \item weryfikacja poprawności leczenia
+    \item kontrola diagnostyczna
+\end{itemize}
+
+Techniki obrazowania:
+\begin{itemize}
+    \item rentgenowaska tomografia komputerowa (CT)
+    \item magnetyczny rezonans jądrowy
+    \item PET-CT
+\end{itemize}
+
+Skala Housfielda, HU
+
+$H_{tkanki} = 1000 \frac{\mu_{tkanki}-\mu_{H_2O}}{\mu_{H_2O}}$
+
+Obrazowanie do radioterapii
+
+Symulatory (radioterapeutyczne lub tomograficzne)
+
+Nowoczesne symulatory służą do:
+\begin{itemize}
+    \item lokalizacji tkanek nowotw. i prawidłowych
+    \item symulacji radioterapii
+    \item weryfikacji planu leczenia
+    \item monitorowania leczenia
+\end{itemize}
+
+Symulator CT
+\begin{itemize}
+    \item płaski balt stołu
+    \item duży otwór pierścienia CT
+    \item system wskaźników laserowych
+    \item wirtualny symulator
+\end{itemize}
+
+Wirtualna symulacja:
+
+Zalety
+\begin{itemize}
+    \item eliminacja dodatkowego kroku
+    \item bez pacjenta
+    \item bez dodatkowego urządzenia
+    \item oróbka - łączenie obrazów
+    \item jako obraz odniesienia do dalszej kontroli - bliższy oryginału w oparciu o który wykonano plan
+\end{itemize}
+Wady
+\begin{itemize}
+    \item obraz zamrożony
+    \item dużo danych (szybkość vs jakość)
+    \item ograniczenie wielkości otworu
+    \item pacjent nie przyzwyczaja się do aparatu
+\end{itemize}
+
+Wyznaczanie gęstości elektronowej z HU
+
+Obrazowanie portalowe EPID
+
+\section{Wykład (13.11.2023)}
+
+\subsection{Medycyna nuklearna}
+
+Ustawa o prawie atomowym
+
+Medycyna nuklearna - działalność diagnostycza związana z podaniem pacjentom produktów radiofarmaceutycznych, a także leczenie polegające na zamierzonym wprowadzaniu do ustroju terapeutycznych ilości produktów radiofarmaceutycznych.
+
+Gammakamera - obrazowanie ilościowe
+
+Terapia - badanie ilościowe
+
+Techniki obrazowania medycznego: z użyciem promieniowania jonizującego (rentgenodiagnostyka, medycyna nuklearna), bez użycia promieniowania jonizującego (MRI, USG, metody optyczne)
+
+Obrazowanie w:
+radiologii - transmisyjne (akt zarejestrowania obrazu - ekspozyja)
+medycyna nuklearna - emisyjne (akt zarejestrowania obrazu - akwizycja)
+
+Techniki obrazowania: strukturalne (jak wyglądają struktury ciała, tomografia komputerowa, rezonans magnetyczny) i funkcjonalne (jak działają dane narządy, scyntygrafia, funkcjonalny rezonans magnetyczny)
+
+Medycyna nuklearna stosuje obrazowanie funkcjonalne
+
+Medycyna nuklearna używa otwartych źródeł promieniotwórczych. Najczęściej w formie płynnej. Wydzielone miejsca poruszania się, miejsca dla personelu i dla pacjentów osobno. Specjalne procedury, zalecenia dla pacjentów po przeprowadzonym badaniu. 
+
+Poniżej 800 MBq (40 uS / h) - granica
+
+Pola działania medycyny nuklearnej i ich potencjał:
+
+Terapia izotopowa
+obrazowanie molekularne
+topograficzna i czynnościowa diagnostyka radioizotopowa
+diagnostyka radioimmunologiczna in vitro
+
+Promieniowanie:
+- bardzo krótki zasięg działania
+- terapia radem (badania z wykorzystaniem promieniowania alfa, coraz więcej badań dotyczących wykorzystania tego typu promieniowania w radioterapii)
+
+Co do terapii: alfa i beta
+Co do diagnostyki: gamma (ma nieskończony zasięg)
+
+Stosowane izotopy: diagnostyka (Tc-99m, I-123, I-131, F-18, Ga-68), terapia (Lu177, Re186, Y90, Sm153, Ra223, As211, In111)
+
+Aktywności rzędu MBq, a nawet setek MBq. Czasem rzędu GBq.
+
+Najważniejsze cechy źródła: aktywność, czas połowicznego rozpadu, typ rozpadu, głowne (wykorzystywane) linie energetyczne, typ źródła (otwarte/zamknięte, płyn/ciało stałe)
+
+Oddziaływanie promieniowania X, gamma - reakcja fotojądrowa
+
+90\% badań scyntygraficznych z wykorzystaniem Tc-99m (wytwarzanie przy użyciu generatorów technetu)  aktywność 8-10 GBq, czas 1/2 - 6,02 h, typ rozpadu - gamma, linie energetyczne - 140 keV (monoenergetyczny, optymalna do obrazowania), źródło otwarte
+
+Podstawy obrazowania w medycynie nuklearnej
+
+- gammakamera (1, 2, lub 3-głowicowe) - rozdzielczość zależy od odległości głowicy od pacjenta (aby kolimator zatrzymał jak najwięcej rozprzoszonych kwantów)
+
+Zadania fizyka medycznego w medycynie nuklearnej (scyntygrafia)
+- Sporządzanie protokołów akwizycyjnych
+- planowanie pomiarów akwizycji
+
+Budowa pozytonowego tomografu emisyjnego (PET) - nie ma fizycznego kolimatora (korzysta się z kolimacji elektroniczna) - wykorzystuje się radiofarmaceutyki emitujące promieniowanie beta+, pozytony anihulują z elektornami, w wyniku czego powstają dwa kwanty gamma o energiach 511 keV poruszających się w przeciwnych kierunkach. Detektory rejestrują te kwanty i określają tor ruchu tych fotonów (udział koincydencji prawidłowej - 30\%). W badaniach PET nie da się przeprowadzać badań dynamicznych (wynika to z małego zakresu widzenia: ok. 30 cm, w trakcie badania całego ciała wykonuje się obrazowanie po fragment po fragmencie). Elementy detekcyjne plastikowe - niska wydajność detekcji, ale ich praca jest szybka (krótki czas zaniku scyntylacji - 2 ns).
+
+Parametry wpływające na rozdzielczość: zasięg pozytonów - zależny od spektrum energetycznego rozpadu, niekolinearność pozytonów - ok. 0,5 stopnia różnicy, związana z resztkową energią pozytonu, rozmiar detektora - proporcjonalne do d/2
+
+Izotopy: fluor-18 (cyklotronowy), miedź-62/64, gal-66/68, węgiel-11, azot-13
+
+Obecnie sprzedawane są systemy PET+CT
+
+Zastosowania kliniczne scyntygrafii i PET (choroby nowotworowe, układu nerwowego, serca)
+
+Koincydencja prawidłowa, przypadkowa, pochodzące z rozproszeń
+
+
+\section{Wykład 20.11.2023}
+
+Zależność piku braga od dawki promieniowania.
+
+Rozproszenie wiązki (w wąskich wiązkach pik Bragga staje się słabiej uwidoczniony)
+
+Przeżywalność komórek
+
+Terapia Baronowo-neutronowa
+
+Dozymetria Kliniczna
+
+\subsection{Brachyterapia}
+
+Metody brachyterapii
+\begin{itemize}
+    \item Metoda LDR
+    \item Metoda HDR
+    \item Brachyterapia śródoperacyjna
+    \item Brachyterapia okołooperacyjna
+    \item Metoda PDR
+\end{itemize}
+
+Źróła promieniotwórcze
+
+Moduły powierzchniowe
+
+Implanty wewnątrzjamowe
+
+Implanty wewnątrztkankowe
+
+Implanty długotrwałe
+
+Stenty
+
+\section{Wykład (27.11.2023)}
+
+Obszary w radioterapii
+
+obszar guza
+
+Kliniczny obszar napromienienia
+
+zaplanowany obszar napromienienia
+
+obszar leczony
+
+obszar napromieniony
+
+Obszar guza GTV - to masa guza, którą daje się ustalić istniejącymi metodami diagnostycznymi
+
+Obszar kliniczny napieniania CTV - to powiększony obszar GTV. Powiększany jest o pewien margines ze względu na większe prawdopodobieństwo występowania komórek nowotworowych wokół guza.
+
+Marginesy wokół CTV:
+
+\begin{itemize}
+    \item marginesy wewnętrzne - wynikają z ruchu narządów
+    \item marginesy zewn - wynikają z ułożenia pacjenta i geometrii wiązki
+\end{itemize}
+
+Zaplanowany obszar napromieniania - PTV - zawiera obszar ITV (margines wewn.) oraz dodatkowy margines uwzględniający niepewność pozycjonowania, dokładność ustawień akceleratora i inne czynniki zewnętrzne. CTV plus stały lub zmienny margines.
+
+Obszar leczony - obszar objęty pewną, powierzchnią izodozową (np. 90\%).
+
+Narząd krytyczny (Organ at risk OAR) - leżący w pobliżu PTV narząd, w którym dawka wynikająca z planu terapii jest bliska wartości tolerowanej. Pojawienie się takiego obszaru może spowodować konieczność modyfikacji.
+
+Narządy radiowrażliwe - np. soczewki oczu, żuchwa, ślinianki. Narządy, których wrażliwość zależy od sposobu frakcjonowania dawki powinny być omijane.
+
+Uwzględnienie półcienia - należyt odpowiednio dobrać obszar napromieniania. Musimy zaplanować większe pole aby cały obszar PTV objąć izodozą 90\%.
+
+Immobilizacja pacjenta - środki immobilizacji obejmują taśmy, maski (np. siatkowe, na całe ciało), ramki mocowane do czaszki pacjenta, gryzaki, formy (ułożenie pod pacjentem poduchy z drobnych kulek piankowych). Podkładki pod głowę (najprostszy środek immobilizacji).
+
+Ramka stereotaktyczna - w radiochirurgii, mocuje się śrubami do czaszki pacjenta.
+
+\subsection{Planowanie leczenia}
+
+Podstawowy dogmat radioterapii - dostarczyć dawkę zaplanowaną do nowotworu i zrobić wszystko, aby oszczędzić tkanki zdrowe.
+
+Teleradoterapia - prowadzi się na ogół w zykorzystaniem wielu wiązek promieniowania o różnych energiach, padających z różnych kierunków.
+
+Planowanie leczenia (fizyk musi zrozumieć, co dzieje się w danym systemie)
+
+Zlecenie terapii i dokumentacja - może zależeć od dostępności aparatury, dokumentacja ujednolicona i przejrzysta, umożliwia odpowiednio wykształconej osobie zrozumieć, co się działo z pacjentem.
+
+Optymalizacja rozkładu dawki: $P_+ = PMW(D_{ijk}) \cdot \prod_{l=1}^{L}(1-PWM_l(D_{ijk}))^{sk}$
+
+$PMW(N_0, d, D) = e^{-N_0exp(-\alpha D + \beta D d)}$
+
+Znormalizowany gradient dawki $\gamma = \frac{dPMW}{dD}|_{D_{0}}D_0$. w praktyce obserwujemy słabszą zależność pomiędzy dawką...
+
+Kryterium jednorodności rozkładu dawki (uśrednianie dawki)
+
+PWU - jednostki funkcjonalne narządów - prawdopodobieństwo wystąpnienia uszkodzenia.
+
+Jednostki funkcjonalne połączone szeregowo - uszkodzenie jednej z nich powoduje upośledzenie funkcji całego narządu - dawka nawet w niewielkeij obj narządu nie przekracza pewnej wartości granicznej.
+
+PWU - zależność od objętości (Model Lymana)
+
+$TD_{50}$ - dawka, której podanie w obj V pwoduje wystąpienie uszkodzeniau 50\% pacjentów.
+
+Cel planowania leczenia - określenie takiej geometrii wiązek aby przy z góry zadanej dawce całkowitej aplikowanej w PTV podać jak najmniejszą dawkę w obszarze narządów szczególnie wrażliwych na promieniowanie.
+
+Punkt referencyjny
+
+Histogram dawka-objętość (DVH) - we współczesnej radioterapii określenie dawki pochłoniętej dla odpowiednich objętości, a nie dal pojedynczych punktów, ma kluczowe znaczenie w jej przypisywaniu, obliczaniu i raportowaniu, ponieważ.
+
+DVH - wyrażane jako objętość bezwzgl. lub objętość w stosunku do całkowitej objętości struktury, otrzymujące co najmniej daną dawkę pochłoniętą D.
+
+Dawki prawie minimalna i prawie maksymalna ($D_{100\%}$ potocznie nazywa się dawką minimalną (pochłonięta w jednym lub kilku wokselach)i odnosi się nie do wartości dawek, a do objętości, $D_{98\%}$ to dawka prawie minimalna, $D_{2\%}$ to dawka prawie maksymalna) - \textbf{na kolokwium (opisać histogram)}
+
+Planowanie leczenia - wprost i odwrotne (\textbf{Na kolokwium})
+
+Wprost:
+\begin{itemize}
+    \item Użytkownik określa parametry wiązek
+    \item TPS oblicza rozkład dawki 3D
+    \item jeżeli wynik niesatysfakcjonujący, użytkownik modyfikuje parametry wiązek
+\end{itemize}
+
+Odwrotne:
+\begin{itemize}
+    \item Określamy, co chcemy uzyskać na końcu
+    \item TPS wyznacza metodą iteracyjną profil fluencji wiązek (wyznacza parametry)
+    \item jeżeli wynik niesatysffakcjonujący, użytkownik modyfikuje kryteria
+\end{itemize}
+
+Planowanie leczenia w terapii klasycznymi akceleratorami oraz wiązkami stacjonarnymi
+
+Metody SSD oraz SAD izocentryczna
+
+Rożne pola napromieniania (małe pole, standardowe pola o nieregularnym kształcie, bardzo duże pola napromieniania)
+
+Rola symulacji - wykrzystuje się w procesie radioterapii do zebrania danych anatomicznych pacjenta, do weryfikacji czy plan może buć realizowany.
+
+Cyfrowo rekonstruowane radiogramy (DRR)
+
+Planowanie 1D, 2D, 3D, 4D
+
+Zasady doboru liczby wiązek - najprostszą techniką wielopolową jest napromienienie dwoma wiązkami. Dla takiej techniki równanie nie ma rozwiązania. W tym przypadku ososba planująca. Zwiąkszenie liczby wiązek przekłada się na wydłużenie redioterapii.
+
+Po zastosoaniu klinów minimalizujemy różnice w ułożeniu wiązek (w technice dwóch wiązek).
+
+Warunki jednorodności
+
+\subsection{Planowanie radioterapii}
+
+planowanie 3DCRT
+
+IMRT - intensity modulated radiotherapy (dwie podstawowe metody: dynamiczna (posuszanie się listków w trakcie napromieniania), sekwencyjna (każde pole podzielone jest na szereg mniejszych segmentów, które są napromieniane sekwencyjnie))
+
+Klasyczne planowanie leczenia - wprost i odwrotne
+
+IMRT - złożony proces
+
+Na czym polega planowanie odwrotne? - podział wiązki na mikrowiązki (beamleat)
+
+Obliczanie dawek dla IMRT $D_i = \sum_{j=1}^{N}C_{ij}W_j$
+
+Symulowane wyrzażanie - tak dobrać parametry, żeby uzyskać maksymalnie z wykorzystaniem dostępnych narzędzi odpowiedni wynik
+
+Proces planowania IMRT
+\begin{itemize}
+    \item wyznaczanie konturów GTV, CTV, PTV przez lekarza
+    \item fizyk wybiera położenie izocentrum, liczbę wiązek, kierunki wejścia wiązek
+    \item wprowadza cele optymalizacji i inicjuje iteracyjny proces optymalizacji
+    \item wygenerowany plan leczenia podlega ocenie pod kątem zakładanych celów. Jeżeli zaakceptowany, proces się kończy. Jeżeli nie, dobór parametrów i optymalizacja są powtarzane.
+\end{itemize}
+
+Ogony izodozy dawki (60\%) - nie powinny one występować
+
+Powszechne kompromisy
+
+Następny wykład 11.12 (04.12 nie ma wykładu)
+
 \end{document}

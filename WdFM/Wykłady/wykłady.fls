@@ -135,11 +135,13 @@ INPUT c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plmi.enc
 INPUT c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plms.enc
 INPUT c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plsc.enc
+INPUT c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plme.enc
 INPUT wykłady.aux
 INPUT ./wykłady.out
 INPUT ./wykłady.out
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plbx10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plbx12.pfb
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plex10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plmi10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plmi5.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plmi7.pfb
