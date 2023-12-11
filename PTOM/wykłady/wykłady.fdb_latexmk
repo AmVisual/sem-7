@@ -1,11 +1,12 @@
 # Fdb version 4
-["pdflatex"] 1700650538 "c:/Users/Komputronik/Documents/Studia/Politechnika Warszawska/Rok 4/sem 7/PTOM/wykłady/wykłady.tex" "wykłady.pdf" "wykłady" 1700650539 0
-  "c:/Users/Komputronik/Documents/Studia/Politechnika Warszawska/Rok 4/sem 7/PTOM/wykłady/wykłady.tex" 1700650538 23430 d84af706115fc4b49ab6b61e1b4742eb ""
+["pdflatex"] 1701254543 "c:/Users/Komputronik/Documents/Studia/Politechnika Warszawska/Rok 4/sem 7/PTOM/wykłady/wykłady.tex" "wykłady.pdf" "wykłady" 1701254544 0
+  "c:/Users/Komputronik/Documents/Studia/Politechnika Warszawska/Rok 4/sem 7/PTOM/wykłady/wykłady.tex" 1701254542 25948 0edb72014a5dd1e1777d4ee382604225 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1696423725 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plme.enc" 1696428165 3126 59f33ff3e396436ebc36f4e7b444d5c4 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plmi.enc" 1696428165 2005 f094775651a1386335c158fb632529f1 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plms.enc" 1696428165 2468 3f9e2f3088bcf5b581dfc367d71e7d95 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plrm.enc" 1696428165 1944 1845592c00bbe510359fd6887a83ff72 ""
+  "c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plsc.enc" 1696428165 1970 17f08459267325f59652d212eb7ed719 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1696425423 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1696424877 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/pl/plbx10.tfm" 1696428165 2120 c2bca6a74408b1687f9d32e4fd3978fc ""
@@ -39,6 +40,7 @@
   "c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr10.pfb" 1696428165 27396 59c827d3c8566d0d9cbf81ac7c0d162a ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr12.pfb" 1696428165 27754 6f5ae55af1b64df2aab0bbeada447136 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr17.pfb" 1696428165 27499 8ba159289d6c1695c29d1198ca087a6c ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr5.pfb" 1696428165 27151 693a7c6218a25c22f826d72cce0c2eac ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plr7.pfb" 1696428165 27523 c9185de4b4f361086bdc0d056fdd2b09 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plsy10.pfb" 1696428165 26714 6fe260cd3a16c4a700b121f4edac67f2 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/pl/plsy7.pfb" 1696428165 26709 a69e1f5beb5c8b5310dedfc070910150 ""
@@ -87,9 +89,9 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1696433969 4727531 c9dcce7e974053f3ba684418f58c0098 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1696434073 8183297 aa5b7a299fbc23548db538d1b26d080a ""
   "c:/texlive/2023/texmf.cnf" 1696433942 713 e69b156964470283e0530f5060668171 ""
-  "wykłady.aux" 1700650539 2321 eb081df451146722b1bcf50e4706216d "pdflatex"
-  "wykłady.out" 1700650539 2436 877bf8474f92fb224269c247d0647c9b "pdflatex"
-  "wykłady.tex" 1700650538 23430 d84af706115fc4b49ab6b61e1b4742eb ""
+  "wykłady.aux" 1701254544 2438 b4465d45a86528a54303bb81bcb1f93b "pdflatex"
+  "wykłady.out" 1701254544 2587 c8196eb83a39e15ff0c0453d23447dde "pdflatex"
+  "wykłady.tex" 1701254542 25948 0edb72014a5dd1e1777d4ee382604225 ""
   (generated)
   "wykłady.aux"
   "wykłady.log"

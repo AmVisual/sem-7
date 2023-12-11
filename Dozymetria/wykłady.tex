@@ -233,6 +233,174 @@ Zakres roboczy napięcia: obszar rekombinacji - komora jonizacyjna - licznik pro
 
 Instytucje nadzorujące skażenia promieniotwórcze: Państwowa Agencja Atomistyki, IMGW, MON - Ministerstwo Obrony Narodowej
 
+\section{Wykład (29.11.2023)}
 
+Od przyszłego tygodnia, tj. 7 grudnia w czwartki będą się odbywały wykłady w godz. 9-11.
+
+11 stycznia - laboratorium na wydziale mechatroniki
+18 stycznia - laboratorium w Świerku.
+
+Stacja wykorzystywana przez Narodową Agencję Atomistyki.
+
+Detektory półprzewodnikowe - jonizacja w krysztale
+
+Model pasmowy budowy kryształów
+
+Wybicie elektronu z pasma walencyjnego do pasma przewodnictwa.
+
+Grubość ddetektorów rzędu kilku cm.
+
+Im większa ilość nośników tym większa rozdzielczość. Przy małych przerwach energetycznych drgania termiczne mogą powodować termiczne wzbudzenie elektronu do pasma przewodnictwa.
+
+Zniszczenia radiacyjne.
+
+Ruchliwość ładunków: $v_{e,h} = \mu_{e,h} E$
+
+Detektory są bardzo szybkie
+
+Mogą zdarzyć się straty nośników: pułapkowanie oraz przedwczesna rekombinacja elektron-dziura.
+
+Dla Germanu, dla którego zdolności rozdzielcze detektorów są lepsze, potrzebny jest układ chłodzący półprzewodnik.
+
+HPGe - High Purity Germanium - najlepsze do pomiarów spektrometrycznym
+
+Detektory półprzewodnikowe - pomiary cząstek alfa (rząd energii: kilka MeV).
+
+Obrazowanie portalowe - rozkład energii wiązki w pewnym obszarze (EPD - electornic portal imaging device)
+
+Zasada odczytu CCD
+
+Detektory pikselowe-hybrydowe
+
+\subsection{Dozymetria termoluminescencyjna}
+
+Poziomy energetyczne w materiale. Umieszczenie dodatkowych atomów w sieci krystalicznej powoduje powsatnie pułapek w przerwie energetyczne. Elektron przy powrocie z pasma przew. do walencyjnego może zostać uwięziony w pułapce. Gdy dostarczymy energię do elektronu (np. przez podgrzanie lub optycznie stymulowanie) elektron rekombinuje i emituje energię.
+
+Prawdopodobieństwo opuszczenia pułapki $p = s\cdot\mathrm{exp}(-E_n/(kT))$, natężenie promieniowanego światła $I(T) = C ns\cdot\mathrm{exp}(-E_n/(kT))$.
+
+Podgrzewa się próbkę liniowo.
+
+Krzywa wyświetlania: obecność pików (kilka różnych pików związanych z różnymi pułapkami w materiale).
+
+Efektywna liczba atomowa, tkankopodbność (najczęściej 7,5, ale zależy od sposobu przeliczania)
+
+Materiały TLD: LiF (fluorek litu) aktywowany Mg, Ti, Cu i P; CaF2 akt. Mn, Dy; CaSO4 akt. Dy i Tm
+
+Dozymetry Albedo (do rejestrowania wszystkich rodzajów promieniowania alfa, beta i gamma). Tworzy się specjalny rodzaj obudowy, umieszcza się cztery pastylki. Dwie domeszkowane litem-6 i dwie domieszkowane litem-7. Kiedy szybkie neutrony przechodzą przez dozymetr, ich wychwycenie jest małe. Gdy neutrony są wyhamowywane przez ciało pacjenta, mogą uledz rozproszeniu wstecznemu i zostać wychwycone przez dozymetr. Dozymetry te wykorzystuje się tylko w miejscach, gdzie może być obecne promieniowanie neutronów.
+
+Dozymetria środowiskowa - tanie, niezależne od zasilania, daje informację scałkowaną w czasie.
+
+Informacja w dozymtrach TLD może być odczytana tylko raz, po ogrzaniu informacja jest tracona. W przypadku uszkodzenia dozymetru informacja jest tracona na stałe.
+
+Detektory OSL (Optically Stimulated Luminescence) - można wykonać zbieranie informacji kilkukrotnie, informacja nie jest tracona.
+
+Detektory śladowe - cząstka naładowana uszkadza wiązania w polimerze. Wytrawianie w zasadzie zachodz szybciej w miejscach uszkodzenia. Dzięki temu owidaczniają się ślady cząstek. Ilość śladów - intensywność wiązki. Średnice otworów - energia promieniowania.
+
+Detektory filmowe - obecnie stosuje się filmy gafchromowe - odczyt zmiany gęstości optycznej za pomocą skanera.
+
+Inne materiały dozymetryczne: emulsje (klisze rtg), żele dozymetryczne - matriał, który zmienia swoje właściwości pod wpływem działania promieniowania jonizującego.
+
+\subsection{Dozymetria}
+
+Dawka skuteczna (efektywna)
+
+Oblicz moc dawki od źródła punktowego
+
+\subsection{Wykład (06.12.2023)}
+
+Laboratorium:
+
+4 stycznia - wydział fizyki 9:15-12:00 Ochrona radiologiczna
+
+11 stycznia - 9:15- 12:00 Gmach Wydziału Mechatroniki (Badanie rozkładu pól promieniowania rozproszonego w pracowni RTG)
+
+18 stycznia - 8:00 - 15:30 Laboratorium w Świerku
+
+Przykład: dawka od źródła punktowego
+
+$D = \frac{\Gamma_{\gamma} A t}{k l^2}$, gdzie $\Gamma$ - stała ekspozycyjna, k - krotność osłabienia, l - odległość od źródła, A - aktywność
+
+Aby obliczyć obciążenie tkanki promieniowaniem należy uwzględnić współycznniki wagowe promieniowania oraz współczynniki wagowe tkanek i narządów.
+
+Dawce pochłoniętej w powietrzu równej 0,087 cGy odpowiada dawka rownoważna 1 mS.
+
+$F(R,h) = 1/4 \left(1 - \frac{h}{\sqrt{h^2-R^2}}\right)$ - współczynnik geometryczny do obliczania dawek od źródeł powierzchniowych (wzór nie przydaje się do obliczania dawki dla dużych odległości h od źródła)
+
+$\dot{D} = a_m \bar{E}_{\gamma}$ - wzór na moc dawki od źródeł zewnętrznych (np. gazu radioaktywnego)
+
+Biologiczny czas połowicznego rozpadu (radiofarmaceutyk, który miałby długi czas życia, mógłby powodować poważne problemy zdrowotne).
+
+Efektywny czas połowicznego rozpadu ($T_{ef} = \frac{T_bT}{T_b + T}$)
+
+Biologiczne skutki promieniowania:
+
+\begin{itemize}
+    \item skutki stochastyczne (występują z pewnym prawdopodobieństwem, nowotwory lib zmiany dziedziczne),
+    \item skutki deterministyczne (występuje po przekroczeniu pewnej progowej dawki),
+    \item etap fizyczny (promieniowanie niszczy DNA), etap chemiczny (wolne rodniki), etap biologiczny (próba naprawy, mutacja lub apoptoza, aberracje chromosomowe (dicentryki indukowane przez promieniowanie jonizujące, posiadają dwa centromery))
+\end{itemize}
+
+\section{Wykład (07.12.2023)}
+
+Skutki promieniowania zależą od:
+\begin{itemize}
+    \item rodzaj promieniowania
+    \item rodzaj narażenia (zewnętrzne vs wewnętrzne)
+    \item wielkość dawki
+    \item napromieniowanie całego ciała, czy tylko jego części, wielkość napromienionego obszaru ciała
+    \item jaki narząd lub tkanka zostały napromienione
+    \item rozkład dawki w czasie
+    \item wiek i płeć osoby
+    \item stan zdrowia
+    \item indywidualnej promieniowrażliwości
+\end{itemize}
+
+Wpływ promieniowania na człowieka: główne zależności skutku od dawki
+
+Obecnie powszechnie stosowanym modelem zaelżności skutku od dawki jest modelem liniowym bez progu (linear non-threshold model).
+
+Inne modele to liniowa z progiem (linear threshold), hormezy radiacyjnej (hormesis model, korzystny wpływ, efekt Yonezawy - w niektórych przypadkach komórek jeśli naświeltimy małą dawką, i następnie po odczekaniu naświetlimy jeszcze raz, komórka uodporni się na promieniowanie, jej promieniowrażliwość spadnie, efekt Yonezawy zarejestrowano, że występuje u co 2 osoby) 
+
+Zasada Laara nakłada bardzo dużo ograniczeń na organizację pracy.
+
+Efekty deterministyczne - stopień ostrości reakcji zależy od dawki
+
+Efekty stochastyczne - stopień ostrości reakcji nie zależy od dawki
+
+Dawki promieniowania w Polsce: 3,96 - roczna całkowita dawka sluteczna
+
+Dawki graniczne wg Prawa atomowego:
+
+Pracownicy: dla pracowników dawka skuteczna\slash efektywna wynosi 20 mSv w ciągu roku, dawka ta może być w szczególnych przypadkach zwiększona do 50 mSv, dawki dla różnych części ciała (np. dla soczewki oka: 20 mSv, dla skóry, jako wartość średnia dla każdego obszaru na cm kwadratowy skóry: 500 mSv), dla uczniów i studentów: 6 mSv w ciągu roku od 16-18 roku, dla uczniów, studentów poniżej 16 lat dawki graniczne ustalone dla ogółu społeczeństwa, dla ogółu ludności 1 mSv (mniejsza niż roczna dawka skuteczna, ponieważ dakwi efektywne, równoważne zmniejsza się o dawki promieniowania jonizującego tła, zgodnie z prawem atomowym średnia wartość tła dla Polski przyjmuje wartość 2,4 mSv).
+
+\subsection{Wielkości robocze w dozymetrii}
+
+System wielkości operacyjnych
+
+Wielkości robocze:
+\begin{itemize}
+    \item równoważniki dawki (przestrzenny, kierunkowy oraz indywidualny)
+    \item 
+\end{itemize}
+
+Przestrzenny równoważnik - dawka otrzymywana od pola w pewnym otoczeniu (d w mm, dla promieniowania gamma np. d = 10 mm) - równoważnik dawki który byłby wytworzony przez odpowiednie pole rozciągłe i zoreintowane w kuli ICRU na głębokości d wzdłuż promienia ustawionego w kierunku przeciwnym do kierunku pola.
+
+Kierunkowy równoważnik dawki - dla promieniowania niskoenergetycznego, oprócz głebokości podawany jest kierunke - zdefiniowany tak samo jak H*, ale wyznaczany wzdłuz promienia.
+
+Indywidualny równoważnik dawki - w tkankcach miękkich na głębokości d poniżej określonego punktu ciała (już nie w kuli ICRU) $H_p(10)$ jest używany jako oszacowanie dawki efektywnej.
+
+Pole rozciągłe
+
+Pole zorientowane
+
+Nowe wielkości operacyjne - rekomendowane przez ICRU dawka przestrzenna i indywidualna (nie równoważniki), bazujące na fluencji cząstek. W Polsce jeszcze nie wprowadzone.
+
+Wzorcowanie przyrządó dozymetrycznych:
+Detektory powinny:
+\begin{itemize}
+    \item mierzyć dawkę w dowolnym materiale dla dowolnego promieniowania w szerokim zakresie energii
+    \item rozróżniać różne typy promieniowania
+    \item być na tyle małe, żeby nie zaburzać pola promieniowania, ale na tyle duże, żeby miały potrzebną czułość
+\end{itemize}
 
 \end{document}
