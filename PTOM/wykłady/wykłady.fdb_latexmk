@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1701254543 "c:/Users/Komputronik/Documents/Studia/Politechnika Warszawska/Rok 4/sem 7/PTOM/wykłady/wykłady.tex" "wykłady.pdf" "wykłady" 1701254544 0
-  "c:/Users/Komputronik/Documents/Studia/Politechnika Warszawska/Rok 4/sem 7/PTOM/wykłady/wykłady.tex" 1701254542 25948 0edb72014a5dd1e1777d4ee382604225 ""
+["pdflatex"] 1702464930 "c:/Users/Komputronik/Documents/Studia/Politechnika Warszawska/Rok 4/sem 7/PTOM/wykłady/wykłady.tex" "wykłady.pdf" "wykłady" 1702464931 0
+  "c:/Users/Komputronik/Documents/Studia/Politechnika Warszawska/Rok 4/sem 7/PTOM/wykłady/wykłady.tex" 1702464929 28440 bb199d9fd93e5c65d68b0737929c77a4 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1696423725 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plme.enc" 1696428165 3126 59f33ff3e396436ebc36f4e7b444d5c4 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/pl/plmi.enc" 1696428165 2005 f094775651a1386335c158fb632529f1 ""
@@ -89,9 +89,9 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1696433969 4727531 c9dcce7e974053f3ba684418f58c0098 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1696434073 8183297 aa5b7a299fbc23548db538d1b26d080a ""
   "c:/texlive/2023/texmf.cnf" 1696433942 713 e69b156964470283e0530f5060668171 ""
-  "wykłady.aux" 1701254544 2438 b4465d45a86528a54303bb81bcb1f93b "pdflatex"
-  "wykłady.out" 1701254544 2587 c8196eb83a39e15ff0c0453d23447dde "pdflatex"
-  "wykłady.tex" 1701254542 25948 0edb72014a5dd1e1777d4ee382604225 ""
+  "wykłady.aux" 1702464931 2709 d4be4ea0641836988b7dd1b47cec1182 "pdflatex"
+  "wykłady.out" 1702464931 3041 eba932852d704c6ef1b79df57272dd39 "pdflatex"
+  "wykłady.tex" 1702464929 28440 bb199d9fd93e5c65d68b0737929c77a4 ""
   (generated)
   "wykłady.aux"
   "wykłady.log"

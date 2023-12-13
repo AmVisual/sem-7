@@ -571,5 +571,57 @@ Wzmacniacz obrazu (to nie fotopowielacz!!!) - bańka szklana (gorszy kontrast i 
 
 Wymagania stawiane w radiografii cyfrowej
 
+\section{Wykład (13.12.2023)}
+
+\subsection{Podstawy obrazowania medyznego - tomografia CT}
+
+Tomografia (thomos i grapheos).
+
+Generacje tomografów (piąta generacja nie weszła do zastosowania, zbyt skomplikowana i droga).
+
+Podstawy fizyczne: $\mu_E^t = -1/d \ln{I/I_0}$
+Podstawy fizyczne: $\int_{}^{}\mu(x)dx = -1/d \ln{I/I_0}$
+
+Jednostki: $CTnnumber = 1000 \frac{\mu - \mu_{water,73keV}}{\mu_{water,73keV}}$, dla wody ma wartość 0.
+
+Tomograf pierwszej generacji (lampa rtg, 1 detektor, wązka wiązka skolimowana, dzięki czemu jakość była wysoka. Obrót ramy o 180 stopni.)
+
+Tomograf drugiej generacji (ruch posuwisty i ruch obrotowy)
+
+Tomograf 3 gen (rewolucja, lampa rtg i matryca detektorów rozłożona na łuku, na tyle szeroka matryca i wiązka promieniwania, aby obejmowała całe ciało - likwidacja ruchu posuwistego, przyspieszenie obrazowania)
+
+Tomograf 4 gen (detektory dookoła pacjenta)
+
+Tomograf 5 gene (na obwodzie znajduje się ognisko lampy rtg, sterujemy kierunkiem wiązki) 2-3 prototypy na świecie
+
+Tomografia spiralna (załatwia sprawę kilku wartsw, obrót lapmpy rtg i jednocześnie przesuwane jest łóżko z pacjentem, uzyskujemy wówczas więcej warstw zdjętych). Problemy: jak lampa jest podłączona, że kable się nie plączą XD? \textbf{Kolokwium}. 
+
+PM - fotopowielacz
+
+Komora ksenonowa - detektor
+
+Elementy systemu tomografii: 
+
+suwnica tomografu rtg (CT gantry)
+
+Lampa rtg, kolimatory, filtry energetyczne - ciągła praca wymaga wysokiego chłodzenia. Lampa rtg głównie produkuje ciepło.
+
+Kolimatory: pierwszy kolimator lampy rtg - ustala szerokość wiązki, drugi kolimator - ustala pole naświetlania pacjenta między lampą a pacjentem, 3 kolimator przed detektorem - określona wiązka dociera do detektora (jedna wiązka dociera z jednego kierunku).
+
+Detektory scyntylacyjne
+
+System akwizycji danych: element detektora, przetwornik prąd-napięcie, integrator, multiplekser, przetwornik A\slash C.
+
+Łóżko pacjenta - powinno absorbować jak najmniej promieniowania rtg, wykonany z włókna węglowego
+
+Rekontrukcja obrazu
+
+\textbf{Kolokwium} jakie metody rekonstrukcji są stosowane: metoda projekcji wstecznej, metoda iteracyjna. Na slajach z wykładu opis metod. Metoda iteracji algebraicznych (rekonstrukcja obrazu na podstawie całek \textbf{Zadanie na kolokwium})
+
+Z prawa Lamberta-Beera (całki).
+
+Obecnie jedyna stosowana metoda - algorytm filtrowanej projekcji wstecznej
+
+
 
 \end{document}
