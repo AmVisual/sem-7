@@ -622,6 +622,110 @@ Z prawa Lamberta-Beera (całki).
 
 Obecnie jedyna stosowana metoda - algorytm filtrowanej projekcji wstecznej
 
+\section{Wykład (20.12.2023)}
 
+Zakres liczb Hansfielda (okna), np. okno kostne (duże liczby Hansfielda), okno tkankowe (średnie wartości Hansfielda), okno płucne (niskie wartości Hansfielda).
+
+\subsection{Tomografia Rezonansu Magnetycznego}
+
+MRI (Magnetic Resonance Imaging) - zjawisko rezonansu magnetycznego w jądrach atomowych.
+
+Zaleta: metoda nieinwazyjna
+
+Współczynnik żyromagnetyczny atomu wodoru 42,35 MHz\slash T
+
+$\vec{M} = \frac{\sum_{}^{} \vec{\mu_i}}{V}$ - wektor magnetyzacji. Istnieje nadwyżka ułożenia momentów magnetycznych w kierunku i zwrocie zgodnym z polem magnetycznym w stosunku do ułożeń przeciwnych (0,0003\%\slash 1T)
+
+Momenty magnetyczne pochłaniają energię fali RF i dochodzi do ich synchronizacji, powodując zmianę położenia wektora magnetyzacji z kierunku Z do kierunku na płaszczyźnie XY.
+
+Impuls pobudzenia $\pi/2$ - zmienia kierunek wektora magnetyzacji z pionowego na poziomy.
+
+Jaki sygnał odbieramy, co odbieramy?
+
+Wielkość fizyczną, jaką odbieramy jest napięcie, które indukuje się w cewce odbiorczej  rejestrujące zmiany wektorów magnetyzacji w płaszczyźnie XY- to jest sygnał, który odbieramy. $V_c = d\Phi / dt$
+
+$M_Z = M_{XY}(1-e^{-t/T_1})$, T1 jest czasem relaksacji podłużnej
+
+Zanik magnetyzacji poprzecznej: T2 - czas relaksacji poprzecznej, czas wynikający z oddziaływania spin-spin (tkanki zdrowe i patologiczne różnią się czasem T2).
+
+W wyniku lokalnych niejednorodności momenty magnetyczne natychmiast ulegną desynchronizacji (T2*). Chcemy sprawić, aby wektor magnetyzacji poprzecznej odbudował się po pwenym czasie. Dlatego po wysłaniu impulsu pi pół wysyłany jest impuls odwracający $\pi$.
+
+Sekwencja Spin-Echo
+
+TE - czas echa - czas pojawienia się maksimum sygnału od momentu pobudzenia $pi$
+
+TR - czas repetycji
+
+Sekwencje powtarzamy tyle razy, ile wynosi rozdzielczość matrycy detekcyjnej (np. jeżeli matryca 256x256, to powtarzamy ją 256 razy)
+
+Im większa gęstość protonów, tym magnetyzacja będzie większa i sygnał będzie większy.
+
+Obraz zawsze zależy od wszystkich 3 czynników: PD, T1 i T2. Dostosowując odpowiednie paramtery TR i TE możemy uzależnać obraz od tych czynników w różnym stopniu.
+
+Obrazy T1 zależne - TR i TE krótkie, czas ten powinien być rzędu T1. Krótki czas TE - uniezależnienie od czasu T2.
+
+T2 zależny - TR długi i TE - długi
+
+PD (N(H)) - gęstość protonów - długi czas TR (aby tkanki miały czas się nasycić), krótki czas TE - pozbycie się zależności od relaksacji poprzecznej.
+
+\section{03.01.2024}
+
+Selektywność - pochłanianie fal EM o ściśle określonej częstotliwości.
+
+Metoda spin-echo - rejestrujemy echo, czyli zmianę pola magnetycznego w płaszczyźnie XY w wyniku pobudzenia spinów wodoru falą radiową o częstotliwości Larmorowskiej. Wektor M kładzie się na płaszczyźnie XY. Zmiana tego wektora, który krąży w płaszczyźnie XY powoduje powstanie sygnału w cewce odbiorczej. Amplituda sygnału odpowiada kontrastowi na obrazie.
+
+Po położeniu wektora magnetyzacji na płaszczyźnie XY natychmiast się rozsynchroizują ze względu na niejednorodność pola magnetycznego w sąsiedztwie atomów wodoru (nawet po paru ms). W tym celu pobudzamy wektory jeszcze raz sygnałem pi, aby odwrócić fazy momentów magnetycznych i wzmocnić ponownie sygnał.
+
+Środek gd-DTPA powoduje skrócenie czasów T1 i T2.
+
+(Zadanie na kolokwium!!!) Kontrast, który zależy od T1, T2, PD, Vp
+
+Warstwa o grubości d
+
+$T_R \approx T_1$
+
+$T_E \approx 0$
+
+Jeżeli będziemy zwiększać prędkość $v=\frac{d}{2T_R}$. Połowa protonów z sąsiedniej warstwy wpłyie do warstwy, a połowa wypłynie.
+
+To sprawi, że amplituda sygnału będzie większa.
+
+$v = \frac{d}{T_R}$ - protony z sąsiedniej warstwy wypełnią warstwę.
+
+Gdy $v = d/2T_E$ - obraz będzie znacznie ciemniejszy (wszystkie protony wypłyną z warstwy i nie będą bray udziału w rezonansie), $v = d/4T_E$ - obraz będzie nieco ciemniejszy (część protonów wypłynie z warstwy)
+
+Jaka jest gęstość protonów z warstwy sąsiedniej.
+
+Wybór współrzędnej Z
+
+Gradient pola magnetycznego - musimy zróżnicować poszczególne woksele w warstwie. Rezonans zależy od $\omega = \gamma B_z$. Jeśli zmienimy tę częstotliwość Larmora sygnału $\pi /2$ i $\pi$. Wzbudzeniu ulegną tylko protony, których spiny drgają z daną częstotliwością rezonansową, które zależą od gradientu pola magnetycznego $B_z$ (na pole $B_0$). W ten sposób wybieramy warstwę obrazowania. Aby mieć warstwę o określonej grubości, to musimy mieć sygnał o lekkie paśmie. 
+
+Wybór położenia X (kodowanie fazy)
+
+Za pomocą gradientu zmienamy pole $B_z$, ale w kierunku X. Zmiana ta zachodzi odrazu po impulsie $pi/2$. To spowoduje, że spiny protonów rozsynchronizują się (chwilowo protony będą miały różne prędkości), to sprawi, że fazy tych spinów będą zależne od położenia X.
+
+Wybór położenia Y (kodowanie y)
+
+Zmieniamy pole $B_z$ w zależności od Y. 
+
+$S_{w1} = A_{11}sin(\omega_{11} t + \phi_{11}) + A_{12}sin(\omega_{21} t + \phi_{11}) + A_{13}sin(\omega_{31} t + \phi_{11}) + A_{21}sin(\omega_{21} t + \phi_{12}) + A_{22}sin(\omega_{22} t + \phi_{12}) + ...$ (dla każdego Y, więc dla obrazu 256x256 trzeba wykonać 256 powtórzeń akwizycji sygnału).
+
+Amplitudy zależą od T1, T2 i PD i określają kontrast obrazu.
+
+W czasie pobudzenia jednej warstwy możemy pobudzić kolejne warstwy. W ten sposób możemy przyspieszyć badanie. Np wysyłając 6 sygnałów pi w różnych warstwach możemy przyspieszyć badanie 6-krotnie.
+
+Koszt: zmniejszenie SNR (ale artfakty róchowe są zlikwidowane).
+
+Problemy przy badaniach NRM: zniekształcenie i niejednorodność pola magnetycznego wewnątrz ciała ludzkiego. Stosowanie cewek korekcyjnych pozwala na skorygowanie tych zmian.
+
+Zniekształcenia zewnętrznymi zakłóceniami pola magnetycznego
+
+Błędy związane z algorytmami rekonstrukcji
+
+Tomografy NMR są umiejscowione w specjalnym płaszczu utrzymującym temperaturę ciekłego helu (4 K).
+
+Budowa tomografu: magnes główny, cewki gradientowe i cewki RF (odbiorcze, które muszą być zlokalizowane najbliżej tkanki obrazowanej)
+
+Jak zrobić i dlaczego, aby uzyskać obraz zależny od T1 lub T2 (dlaczego należy wykorzystać taką sekwencję sygnałów, do czego służą te sygnały)
 
 \end{document}
